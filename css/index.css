@@ -102,6 +102,8 @@ h4 {
   margin-left: 30px;
 }
 .appbar-nav-menu li a {
+  border-bottom: 2px solid;
+  border-color: transparent;
   font-size: 14px;
   color: #faf3f3;
   display: inline-block;
@@ -113,8 +115,6 @@ h4 {
   -o-transition: 0.15s;
   -ms-transition: 0.15s;
   transition: 0.15s;
-  overflow: hidden;
-  border-bottom: 2px solid;
   border-color: #959292;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -122,8 +122,8 @@ h4 {
 }
 .active {
   overflow: hidden;
-  border-bottom: 2px solid;
-  border-color: #959292;
+  border-bottom: 2px solid !important;
+  border-color: #959292 !important;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;

@@ -368,7 +368,7 @@ h4 {
 }
 .info .section-tasks {
   margin: 0 auto;
-  max-width: 1300px;
+  max-width: 1200px;
 }
 .info .section-tasks .section-inner {
   margin: 0 auto;
@@ -384,17 +384,17 @@ h4 {
 }
 .info .section-tasks .section-inner-columnleft {
   vertical-align: top;
-  width: 500px;
+  width: 473px;
   display: inline-block;
 }
 .info .section-tasks .section-inner-columnleft h2 {
   line-height: 55px;
-  font-size: 34px;
+  font-size: 32px;
 }
 .info .section-tasks .section-inner-columnright {
   padding: 0 0 0 40px;
   vertical-align: top;
-  width: 750px;
+  width: 676px;
   display: inline-block;
 }
 .info .section-tasks .section-inner-columnright h5 {

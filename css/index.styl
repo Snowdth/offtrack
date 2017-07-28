@@ -1,15 +1,20 @@
 @import 'nib'
 @import url('https://fonts.googleapis.com/css?family=PT+Sans');
+
+
 html
 body
 	margin 0
 	height 100%
+html
+	height 100%
 	width 100%
 body
-	background #252F37
+	background white
 	font-family 'PT Sans'
 	font-style normal
 	-webkit-font-smoothing antialiased
+	
 li
 	list-style none
 ul
@@ -17,6 +22,19 @@ ul
 a
 	cursor pointer
 	text-decoration none
+article
+aside
+details
+figcaption
+figure
+footer
+header
+hgroup
+menu
+nav
+section
+	display: block;
+
 h2
 h1
 p
@@ -24,7 +42,7 @@ h4
 h5
 	margin 0
 h5
-	font-size 12px
+	font-size 13px
 	line-height 22px
 	color #DAD1D1
 h2
@@ -36,6 +54,9 @@ h3
 h4
 	color #585858
 	font-size 19px
+input
+	outline 0px
+
 	
 ::-webkit-scrollbar
 	background #f4f4f4
@@ -96,8 +117,20 @@ h4
 	border-color transparent !important
 	padding 0 0 15px 0
 	position relative
+.appbar-industries
+	display inherit
+	border-color transparent !important
+	padding 0 0 15px 0
+	position relative
 .appbar-services:hover
 	.dropdown-menu
+		display block
+	.dropdown-menu-industries
+		display block
+.appbar-services:hover
+	.dropdown-menu
+		display block
+	.dropdown-menu-servicies
 		display block
 .dropdown-menu
 	display none
@@ -122,6 +155,10 @@ h4
 		top -16px
 		right 21px
 		left auto
+.dropdown-menu-servicies
+	min-width 172px
+.dropdown-menu-industries
+	min-width 222px
 .subsection
 	display none
 	position absolute
@@ -137,12 +174,10 @@ h4
 	.subsection
 		display block !important
 .section-active
-	overflow hidden
 	border-bottom 2px solid !important
 	border-color #959292 !important
 	box-sizing border-box
 .section-inactive
-	overflow hidden
 	border-bottom 0 !important
 	border-color #959292 !important
 
@@ -162,22 +197,21 @@ h4
 	background rgba(50, 50, 50, 0.3)
 	width 102px
 	border-radius 4px
-	padding 6px 12px
+	padding 9px 12px
 	border-color #DADADA
-	border 2px solid rgba(225,225,225,0.4)
+	border 1px solid rgba(255,255,255,0.7)
 	font-weight 600
 	color white
 .button-transparent:hover
-	color #fff
-	border-color #7D7B7B
-	background-color rgba(50, 50, 50, 0.7)
+	border-color rgba(255,255,255,0.8)
+	background-color rgba(50,50,50,0.6)
 .button-blue
 	cursor pointer
 	outline 0px
 	background #5892F8
 	width 102px
 	border-radius 4px
-	padding 6px 12px
+	padding 9px 12px
 	border-color #5892F8
 	border 2px solid #5892F8
 	font-weight 600
@@ -241,39 +275,115 @@ h4
 
 .aboutus-panelgrid
 	position relative
-	overflow hidden
-	background: url('../img/wallpaper.png') 0% 0% / cover no-repeat
-	height 500px
+	background url('../img/wallpaper.png') 0% 0% / cover no-repeat
+	background-position center
+	height 709px
 	width 100%
+	
 .index-panelgrid
 	position relative
-	overflow hidden
-	background: url('../img/slide.png') 0% 0% / cover no-repeat
+	background url('../img/slide.png') 0% 0% / cover no-repeat
+	background-position center
 	height 100%
 	width 100%
+	
 .attendancereports-panelgrid
 	position relative
-	overflow hidden
-	background: url('../img/attendancereports.png') 0% 0% / cover no-repeat
-	height 500px
+	background:url('../img/attendancereports.png') 0% 0% / cover no-repeat
+	background-position center
+	height 709px
 	width 100%
+	
 .cellularform-panelgrid
 	position relative
-	overflow hidden
-	background: url('../img/cellularform.png') 0% 0% / cover no-repeat
-	height 500px
+	background url('../img/cellularform.png') 0% 0% / cover no-repeat
+	background-position center
+	height 709px
 	width 100%
+	
 .tasks-panelgrid
 	position relative
-	overflow hidden
-	background: url('../img/tasks.png') 0% 0% / cover no-repeat
-	height 500px
+	background url('../img/tasks.png') 0% 0% / cover no-repeat
+	background-position center
+	height 709px
 	width 100%
+	
+.contactus-panelgrid
+	position relative
+	background url('../img/attendancereports.png') 0% 0% / cover no-repeat
+	background-position center
+	height 709px
+	width 100%
+	
+.location-panelgrid
+	position relative
+	background url('../img/cellularform.png') 0% 0% / cover no-repeat
+	background-position center
+	height 709px
+	width 100%
+	
+.optimization-panelgrid
+	position relative
+	background: url('../img/cellularform.png') 0% 0% / cover no-repeat
+	background-position center
+	height 709px
+	width 100%
+	
+.logistic_distribution-panelgrid
+	position relative
+	background: url('../img/cellularform.png') 0% 0% / cover no-repeat
+	background-position center
+	height 709px
+	width 100%
+	
+
 .info
 	overflow hidden
+	width 100%
 	padding 80px 0 100px 0
-	background-color #f1f1f1
-	margin 0
+	background url('../img/confetti.png')
+	margin 0 auto
+	.section-justify
+		max-width 1050px
+		margin 0 auto
+		h5
+			color #585858
+			font-size 15px
+		p
+			line-height 30px
+			font-size 15px
+		.video
+			text-align center
+			padding 90px 0 90px
+	.section-assistance
+		max-width 1100px
+		margin 0 auto
+		.section-inner
+			line-height 30px
+			max-width 960px
+			margin 0 auto
+			.form
+				h2
+					padding 5px 0
+				p
+					text-align justify !important
+					padding 30px 0
+					line-height 30px
+				.form-content
+					width 550px
+					input
+						height 50px		
+					.form-textarea
+						font-family inherit
+						height 200px
+			.video
+				text-align center
+				padding 90px 0 90px
+		h5
+			font-size 15px
+			line-height: 200%
+			text-align center
+		
 	.section-tasks
 		margin 0 auto
 		max-width 1200px
@@ -312,9 +422,26 @@ h4
 				padding 0 0 70px
 				font-size 16px
 				line-height 28px
+.form-control
+	resize none
+	display block
+	outline 0
+	border-radius 4px
+	width 100%
+	font-size 20px
+	padding 10px 10px 12px 20px
+	margin-bottom 10px
+	border 1px solid #efefef
+	color #555
+.form-control:focus
+	outline 0
+	border-color #66afe9
+	box-shadow inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(102, 175, 233, .6)
+	color black
 .comment-gray
-	text-align center	
-	color #878484
+	color #585858
+.comment-center
+	text-align center
 .section-solution
 	padding 80px 0 80px 0
 	.text
@@ -347,9 +474,10 @@ h4
 	display inline-block
 	vertical-align middle
 .readmore
-	overflow hidden
-	background no-repeat url("../img/shutterstock.png") 
-	height 424px
+	background url("../img/shutterstock.png") 0% 0%/cover no-repeat
+	background-position center
+	height 559px
+	width 100%
 	.center
 		max-width 900px
 		margin 0 auto
@@ -368,7 +496,6 @@ h4
 			margin 50px
 		
 .partners
-	overflow hidden
 	padding 70px 0 20px 0
 	background-color #FFFFFF
 	.content
@@ -383,21 +510,27 @@ h4
 				margin 0 auto
 				max-width 887px
 .footer
-	overflow hidden
+	background-color #252f37
 	padding 40px 0 20px 0
-	max-width 1050px
-	margin 0 auto
+	width 100%
 	p
 		font-size 12px
 		line-height 21px
-		color #B1AAAA
+		color #CFC8C8
 	.container
+		text-align center
+		margin 0 auto
+		max-width 1200px
 		padding 40px 0 40px 0
 		.telefons
+			text-align -webkit-auto
 			padding 0 0 20px 0
 			vertical-align top
 			display inline-block
-			width 170px
+			width 196px
+.colofon
+	max-width 1200px
+	margin 0 auto
 
 .section-tutorial
 	max-width 1000px
@@ -446,19 +579,7 @@ h4
 	p
 		width 200px
 
-.section-assistance
-	max-width 1100px
-	margin 0 auto
-	.section-inner
-		max-width 960px
-		margin 0 auto
-		.video
-			text-align center
-			padding 90px 0 90px
-	h5
-		font-size 15px
-		line-height: 200%
-		text-align center
+
 .column
 	width 547px
 	li
@@ -470,7 +591,6 @@ h4
 		font-size 14px
 		padding 0 0 10px
 		color #8E8989
-		font-weight 600
 .left
 	float left
 .right
@@ -480,11 +600,17 @@ h4
 	vertical-align top
 	display inline-block
 	background-image url("../img/check.png")
+	margin-right 5px
 	width 19px
 	height 16px
 	left 0
 	top 4px
 	line-height 1.3em
-
-		
+.check_list
+	p
+		display inline-block
+.main-comment
+	p
+		font-size 21px !important
+		line-height 37px !important
 			

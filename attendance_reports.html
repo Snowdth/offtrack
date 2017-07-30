@@ -12,11 +12,15 @@
 
 	
 	<div class="wrapper">
-		<section class="attendancereports-panelgrid">
+		<section class="attendance_reports-panelgrid">
 			<header class="header">
 				<div class="top-bar">
 					<div class="logo-container">
-						<a href="index.html"> <span  class="logo"></span> </a>
+						<a href="index.html">
+							<span  class="logo">
+								<img src="img/logo.png">
+							</span>
+						</a>
 					</div>
 					<div class="appbar-nav">
 						<ul class="appbar-nav-menu">
@@ -75,16 +79,44 @@
 						</ul>
 					</div>
 					<div class="sign-in">
-						<button class="button-transparent">
+						<div class="hamburger"></div>
+						<button class="button-transparent" onclick="window.location.href = 'login_back.html';">
 							<span>Free Trial</span>
 						</button>
-						<button class="button-blue">
+						<button class="button-blue" onclick="window.location.href = 'login_back.html';">
 							<span>Login</span>
 						</button>
 					</div>
 
 				</div>
 			</header>
+			<div class="menujq">
+				<ul>
+				 <li><a href="login_back.html">Login</a></li>
+				 <li><a href="login_back.html">Free Trial</a></li>
+				 <li><a href="about_us.html">About us</a></li>
+				 <li><a >Services</a>
+				   <ul>
+				   <li><a href="cellular_form.html">Cellular Form</a></li>
+				   <li><a href="tasks.html">Tasks</a></li>
+				   <li><a href="attendance_reports.html">Attendance</a></li>
+				   <li><a href="location.html">Location</a></li>
+				   <li><a href="optimization.html">Optimization</a></li>
+				  </ul>
+				 </li>
+				 <li><a >Industries</a>
+				  <ul>
+				   <li><a href="logistic_distribution.html">Logistic & Distribution</a></li>
+				   <li><a href="service_maintenance.html">Service & Maintenance</a></li>
+				   <li><a href="security.html">Security</a></li>
+				   <li><a href="sales.html">Sales</a></li>
+				  </ul>
+				 </li>
+				 <li><a href="news.html">News</a></li>
+				 <li><a href="support.html">Support</a></li>
+				 <li><a href="contact_us.html">Contact us</a></li>
+				</ul>
+			</div>
 			<div class="section-inner">
 				<div class="cta-container">
 					<h1 class="splash">Attendance Reports</h1>				
@@ -113,7 +145,7 @@
 		<section class="info">
 			<div class="section-assistance">
 				<div class="section-inner">
-					<h5 class="comment-gray comment-center">The Attendance module of OfficeTrack allows workers to report work hours from the field, using their mobile phone. Attendance reporting is done through OfficeCore application, OfficeCore IVR service, or by sending SMS through Office Core SMSC. Using this service, managers receive a complete and up-to-date attendance overview of all his/her workers. The reports are displayed in managerial Internet site, witch information about the location & time where and when the attendance report was made.This information can be exported and displayed on a number of various reports. The service includes automatic export of the attendance reports to the organizational payroll system.</h5>
+					<p class="comment-gray comment-center">The Attendance module of OfficeTrack allows workers to report work hours from the field, using their mobile phone. Attendance reporting is done through OfficeCore application, OfficeCore IVR service, or by sending SMS through Office Core SMSC. Using this service, managers receive a complete and up-to-date attendance overview of all his/her workers. The reports are displayed in managerial Internet site, witch information about the location & time where and when the attendance report was made.This information can be exported and displayed on a number of various reports. The service includes automatic export of the attendance reports to the organizational payroll system.</p>
 					<div class="video">
 						<iframe width="900" height="510" src="https://www.youtube.com/embed/awFfvWFGQCU" frameborder="0" allowfullscreen></iframe>
 					</div>
@@ -281,6 +313,7 @@
 		</section>
 	</div>
 
-	<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+	<script src="js/jquery-3.2.1.min.js"></script>
+	<script src='js/main.js' type="text/javascript"></script>
 </body>
 </html>

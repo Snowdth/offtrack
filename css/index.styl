@@ -22,6 +22,11 @@ ul
 a
 	cursor pointer
 	text-decoration none
+*
+*:before
+*:after
+	box-sizing border-box
+
 article
 aside
 details
@@ -69,8 +74,9 @@ input
 	
 
 .header
-	padding 38px 15px 0px
+	padding 38px 15px 20px
 .top-bar
+	position relative
 	margin 0 auto
 	max-width 1295px
 	width 100%
@@ -81,10 +87,8 @@ input
 	min-width 195px
 .logo
 	cursor pointer
-	background-image url('../img/logo.png') 
-	background-repeat no-repeat
-	height 50px
-	width auto
+	height 45px
+	width 190px
 	display block
 .appbar-nav
 	position relative
@@ -104,7 +108,7 @@ input
 			display inline-block
 			height 23px
 		img
-			padding 0px 0 2px 8px
+			margin 0 0 2px 7px
 .appbar-nav-section:hover
 	transition 0.15s
 	border-color #959292
@@ -273,11 +277,11 @@ input
 	height 100%
 	width 100%
 
-.aboutus-panelgrid
+.about_us-panelgrid
 	position relative
 	background url('../img/wallpaper.png') 0% 0% / cover no-repeat
 	background-position center
-	height 709px
+	height 888px
 	width 100%
 	
 .index-panelgrid
@@ -287,14 +291,14 @@ input
 	height 100%
 	width 100%
 	
-.attendancereports-panelgrid
+.attendance_reports-panelgrid
 	position relative
 	background:url('../img/attendancereports.png') 0% 0% / cover no-repeat
 	background-position center
 	height 709px
 	width 100%
 	
-.cellularform-panelgrid
+.cellular_form-panelgrid
 	position relative
 	background url('../img/cellularform.png') 0% 0% / cover no-repeat
 	background-position center
@@ -308,23 +312,23 @@ input
 	height 709px
 	width 100%
 	
-.contactus-panelgrid
+.contact_us-panelgrid
 	position relative
-	background url('../img/attendancereports.png') 0% 0% / cover no-repeat
+	background url('../img/contact_us.png') 0% 0% / cover no-repeat
 	background-position center
 	height 709px
 	width 100%
 	
 .location-panelgrid
 	position relative
-	background url('../img/cellularform.png') 0% 0% / cover no-repeat
+	background url('../img/location.png') 0% 0% / cover no-repeat
 	background-position center
 	height 709px
 	width 100%
 	
 .optimization-panelgrid
 	position relative
-	background: url('../img/cellularform.png') 0% 0% / cover no-repeat
+	background: url('../img/optimization.png') 0% 0% / cover no-repeat
 	background-position center
 	height 709px
 	width 100%
@@ -335,14 +339,41 @@ input
 	background-position center
 	height 709px
 	width 100%
+.service_maintenance-panelgrid
+	position relative
+	background: url('../img/service_maintenance.png') 0% 0% / cover no-repeat
+	background-position center
+	height 709px
+	width 100%
+.security-panelgrid
+	position relative
+	background: url('../img/security.png') 0% 0% / cover no-repeat
+	background-position center
+	height 709px
+	width 100%
+.sales-panelgrid
+	position relative
+	background: url('../img/sales.png') 0% 0% / cover no-repeat
+	background-position center
+	height 709px
+	width 100%
+.news-panelgrid
+	position relative
+	background: url('../img/news.png') 0% 0% / cover no-repeat
+	background-position center
+	height 709px
+	width 100%
 	
 
 .info
+	opacity: 1;
+	transition: all 1s ease, opacity 0.7s ease;
+	transform: translateY(50px);
 	overflow hidden
 	width 100%
 	padding 80px 0 100px 0
 	background url('../img/confetti.png')
-	margin 0 auto
+	margin 0 auto 100px
 	.section-justify
 		max-width 1050px
 		margin 0 auto
@@ -415,7 +446,7 @@ input
 				text-align justify
 			
 	.section-information
-		max-width 820px
+		max-width 1000px
 		margin 0 auto
 		.text
 			p
@@ -433,6 +464,8 @@ input
 	margin-bottom 10px
 	border 1px solid #efefef
 	color #555
+	::placeholder
+		opacity 0.6
 .form-control:focus
 	outline 0
 	border-color #66afe9
@@ -453,6 +486,7 @@ input
 			font-size 14px
 			padding 20px 0 0 0
 	.container
+		text-align center
 		max-width 700px
 		padding 60px 0 0 0
 		margin 0 auto
@@ -494,7 +528,29 @@ input
 		.button-blue
 			width 146px
 			margin 50px
-		
+.case_study
+	background url("../img/big_screens.png") 0% 0%/cover no-repeat
+	background-position center
+	height 817px
+	width 100%
+	.content
+		height 100%
+		margin 0 auto
+		width 1300px
+
+		.center
+			width 446px
+			position relative
+			top 50%
+			transform translate(0, -43%)
+			.button-blue
+				margin-top 30px
+				height 44px
+				width 180px
+			h1
+				font-weight normal
+				color #59719B
+				font-size 47px
 .partners
 	padding 70px 0 20px 0
 	background-color #FFFFFF
@@ -551,8 +607,6 @@ input
 .section-tutorial-worldusers
 	.worldmap
 		position relative
-		background-image url("../img/worldmap.png") 
-		background-repeat no-repeat
 		height 436px
 		width 826px
 		margin 0 auto
@@ -613,4 +667,261 @@ input
 	p
 		font-size 21px !important
 		line-height 37px !important
+.section-news
+	max-width 1450px
+	margin 0 auto
+	.section-news-card
+		text-align center
+		.news-card
+			width 408px
+			vertical-align top
+			margin 15px
+			box-shadow: 0px 1px 29px -10px rgba(107,107,107,1)
+			background-color white
+			border-radius 13px
+			display inline-block
+			padding 0 22px
+			text-align center
+			border 1px solid #efefef
+			height 470px
+			img
+				margin-top 25px
+			.text
+				width 365px
+				margin 0 auto
+				text-align justify
+				.title
+					padding 12px 0 9px 0
+					color #5A5858
+					p
+						font-size 20px
+						font-weight 600
+						line-height 25px !important
+				.time-text
+					color #5A5858
+					opacity .8
+.video
+	text-align center
+.menujq a 
+	display none
+@media only screen and (max-width 1200px)
+	
+	.menujq ul
+		position relative
+		aria-expanded false
+		list-style none
+		z-index 95
+		width 100%
+		margin 0 auto
+		padding 0
+		font-size 13px
+	.menujq
+		display none
+	.menujq a 
+		display block
+		padding 10px
+		//border-bottom 1px solid rgba(0,0,0,0.5)
+		background rgba(rgba(13,13,13,0.8))
+		color #fff
+		text-decoration none
+		font-size 16px
+		line-height 16px
+		//text-transform uppercase
+	
+	.menujq ul li a:before 
+		content "\25CF\00A0 "
+		width 28px
+		display inline-block
+		vertical-align top
+	
+	.menujq ul li.desplegable > a:before,
+	.menujq ul li ul li.desplegable > a:before 
+		content "\25BA\00A0"
+	
+	.menujq ul li.desplegable.active > a:before,
+	.menujq ul li ul li.desplegable.active > a:before
+		content "\25BC\00A0 "
+	
+	.menujq ul ul, .menujq ul ul ul 
+		display none
+		width 100%
+	
+	.menujq ul ul a 
+		padding-left 20px
+		background  rgba(45,45,45,0.9)
+		text-transform capitalize
+	
+	.menujq ul ul ul a 
+		padding-left 40px
+		background #ED9C54
+		text-transform capitalize
+	
+	
+	.splash
+		font-size 30px
+	.sign-in
+		cursor pointer
+		right 0
+		top 12px
+		font-size 5px
+		margin 0 10px 0 0
+		position absolute
+		min-width 30px
+		height 4px
+		background-color #fff
+		border-radius 100px
+		.hamburger
+			width 40px
+			height 40px
+			position absolute
+			margin -18px 5px 0 -5px
+		.button-transparent 
+			display none
+		.button-blue
+			display none
+	.sign-in::before
+		content ''
+		width 100%
+		bottom 200%
+		display block
+		position absolute
+		height 4px
+		background-color #fff
+		border-radius 100px
+	.sign-in::after
+		content ''
+		width 100%
+		top 200%
+		display block
+		position absolute
+		height 4px
+		background-color #fff
+		border-radius 100px
+	.section-inner
+	.section-solution
+		padding 20px 16px
+	
+	.section-inner-columnleft
+	.section-inner-columnright
+		display inherit !important
+		margin 0 auto
+		width inherit !important
+	.column
+		
+		text-align center
+		float none
+		margin 0 auto
+	.case_study
+		.content
+			width inherit
+			.center
+				text-align center
+				width inherit
+	.appbar-nav
+		display none
+@media only screen and (max-width 979px)
+	.info .section-solution h2
+		font-size 23px
+	.text
+		width 490px !important
+		margin 0 auto
+	.info
+		text-align center
+		padding 20px 0
+	.video
+		text-align center
+		iframe
+			width 510px
+			height 293px
+	.column
+		width inherit
+		padding 0 20px
+		
+	.cta-container
+		width inherit
+	.container-store
+		margin 0 auto
+		transform translateY(187%)
+	.worldmap
+		width 400px !important
+		.wallpaper
+			img
+				height 200px
+	.worldmap-content
+		transform translate(0%, -50%) !important
+		.text
+			width inherit !important
+	.section-justify
+		text-align justify !important
+	.info .section-tasks .section-inner-columnright
+		padding 0
+		h5
+			font-size 14px
+	.info .section-tasks .section-inner-columnleft h2
+		line-height 40px
+		font-size 25px
+		margin-bottom 40px
+	.section-solution .container .text
+		padding 0
 			
+@media only screen and (max-width 732px)
+	.cta-container
+		h1
+			font-size 27px
+	.container-store
+		position relative
+		width 260px
+		transform translateY(205%)
+		img
+			width 100px
+			height 45px
+	.check
+		display none
+			
+@media only screen and (max-width 570px)
+	.column
+		p
+			width inherit
+	.text
+		width 275px !important
+		margin 0 auto
+	.social
+		display none !important
+	.change-language
+		padding 0 0 0 20px !important
+	.cta-container
+		h1
+			font-size 24px
+	.video
+		text-align center
+		iframe
+			width 288px
+			height 168px
+	.worldmap
+		width 225px !important
+	.logo
+		img
+			width 127px
+	.readmore
+		.center
+			h1
+				font-size 20px
+	h3
+		font-size 20px
+	.main-comment
+		p
+			font-size 17px !important
+			line-height 28px !important
+	.news-card
+		height 438px !important
+		width 281px !important
+		img
+			height 227px
+			width 227px
+		.text
+			width 224px !important
+	.section-news
+		.section-inner
+			padding 0
+	.case_study .content .center h1
+		font-size 33px

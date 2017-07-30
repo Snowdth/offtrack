@@ -368,11 +368,19 @@ input {
   height: 100%;
   width: 100%;
 }
+.login_back-panelgrid {
+  position: relative;
+  background: url("../img/login_back.jpg") 0% 0%/cover no-repeat;
+  background-position: center;
+  height: 100%;
+  width: 100%;
+  min-height: 900px;
+}
 .about_us-panelgrid {
   position: relative;
   background: url("../img/wallpaper.png") 0% 0%/cover no-repeat;
   background-position: center;
-  height: 888px;
+  height: 709px;
   width: 100%;
 }
 .index-panelgrid {
@@ -426,7 +434,7 @@ input {
 }
 .logistic_distribution-panelgrid {
   position: relative;
-  background: url("../img/cellularform.png") 0% 0%/cover no-repeat;
+  background: url("../img/logistic_distribution.png") 0% 0%/cover no-repeat;
   background-position: center;
   height: 709px;
   width: 100%;
@@ -458,6 +466,78 @@ input {
   background-position: center;
   height: 709px;
   width: 100%;
+}
+.section-inner-login {
+  vertical-align: middle;
+  max-width: 1295px;
+  top: 50%;
+  position: relative;
+  -webkit-transform: translateY(-84%);
+  -moz-transform: translateY(-84%);
+  -o-transform: translateY(-84%);
+  -ms-transform: translateY(-84%);
+  transform: translateY(-84%);
+  margin: 0 auto;
+}
+.section-inner-login .container-login {
+  width: 590px;
+}
+.section-inner-login .container-login .container-store {
+  margin-top: 50px;
+}
+.section-inner-loginform {
+  text-align: center;
+  position: absolute;
+  width: 548px;
+  right: 0;
+  top: -132px;
+}
+.section-inner-loginform .form-login {
+  padding: 20px !important;
+  background-color: #fff;
+  border: 1px solid #e6e6e6;
+  border-radius: 19px;
+  margin: 0 0 10px;
+  padding: 10px 0;
+}
+.section-inner-loginform .form-login h2 {
+  font-weight: normal;
+  text-align: left;
+  color: #284576;
+}
+.section-inner-loginform .form-login .title {
+  width: 453px;
+  margin: 51px auto 36px;
+}
+.section-inner-loginform .form-login a {
+  color: #284576;
+  margin: 40px 0 44px;
+  display: block;
+}
+.section-inner-loginform .form-login .button-blue {
+  font-size: 20px;
+  margin-bottom: 40px;
+  width: 276px;
+  height: 59px;
+}
+.section-inner-loginform .form-login .form-input {
+  margin: 10px;
+}
+.section-inner-loginform .form-login .form-input input {
+  margin: 0 auto;
+  resize: none;
+  display: block;
+  outline: 0;
+  -webkit-box-shadow: 0px 1px 30px -10px #6b6b6b;
+  box-shadow: 0px 1px 30px -10px #6b6b6b;
+  border-radius: 4px;
+  height: 69px;
+  width: 472px;
+  font-size: 20px;
+  padding: 10px 10px 12px 20px;
+  margin-bottom: 10px;
+  border: 1px solid #efefef;
+  color: #555;
 }
 .info {
   opacity: 1;
@@ -900,6 +980,10 @@ input {
 .menujq a {
   display: none;
 }
+.mini-blue {
+  width: 30px;
+  border: 1px solid #5892f8;
+}
 @media only screen and (max-width: 1200px) {
   .menujq ul {
     position: relative;
@@ -1026,6 +1110,9 @@ input {
   }
 }
 @media only screen and (max-width: 979px) {
+  .section-news .section-news-card .news-card .text {
+    width: 365px !important;
+  }
   .info .section-solution h2 {
     font-size: 23px;
   }
@@ -1170,5 +1257,8 @@ input {
   }
   .case_study .content .center h1 {
     font-size: 33px;
+  }
+  .section-news .section-news-card .news-card .text {
+    width: 224px !important;
   }
 }

@@ -12,7 +12,7 @@
 
 	
 	<div class="wrapper">
-		<section class="attendance_reports-panelgrid">
+		<section class="attendance-panelgrid">
 			<header class="header">
 				<div class="top-bar">
 					<div class="logo-container">
@@ -35,19 +35,23 @@
 									</li>
 									<li>
 										<span class="subsection"></span>
-										<a class="section-option" href="tasks.html">Tasks</a>
+										<a class="section-option" href="tasks.html">Tasks and Work Order</a>
 									</li>
 									<li class="subsection-active">
 										<span class="subsection"></span>
-										<a class="section-option" href="attendance_reports.html">Attendance</a>
+										<a class="section-option" href="attendance.html">Attendance</a>
 									</li>
 									<li>
 										<span class="subsection"></span>
-										<a class="section-option" href="location.html">Location</a>
+										<a class="section-option" href="location.html">Location and Geo Coding</a>
 									</li>
 									<li>
 										<span class="subsection"></span>
-										<a class="section-option" href="optimization.html">Optimization</a>
+										<a class="section-option" href="">Proof of delivery</a>
+									</li>
+									<li>
+										<span class="subsection"></span>
+										<a class="section-option" href="routing_optimization.html">Routing and Optimization</a>
 									</li>
 								</ul>
 							</li>
@@ -74,21 +78,24 @@
 								</ul>
 							</li>
 							<li><a href="news.html" class="appbar-nav-section button">News</a></li>
-							<li><a href="support.html" class="appbar-nav-section button">Support</a></li>
+							<li><a href="help_center-faq.html" class="appbar-nav-section button">Support</a></li>
 							<li><a href="contact_us.html" class="appbar-nav-section button">Contact us</a></li>
 						</ul>
 					</div>
 					<div class="sign-in">
 						<div class="hamburger"></div>
-						<button class="button-transparent" onclick="window.location.href = 'login_back.html';">
-							<span>Free Trial</span>
-						</button>
-						<button class="button-blue" onclick="window.location.href = 'login_back.html';">
-							<span>Login</span>
-						</button>
+						<a href="login_back.html">
+							<button class="button-transparent">
+								<span>Free Trial</span>
+							</button>
+						</a>
+						<a href="login_back.html">
+							<button class="button-blue">
+								<span>Login</span>
+							</button>
+						</a>
 					</div>
-
-				</div>
+				</div>		
 			</header>
 			<div class="menujq">
 				<ul>
@@ -97,11 +104,12 @@
 				 <li><a href="about_us.html">About us</a></li>
 				 <li><a >Services</a>
 				   <ul>
-				   <li><a href="cellular_form.html">Cellular Form</a></li>
-				   <li><a href="tasks.html">Tasks</a></li>
-				   <li><a href="attendance_reports.html">Attendance</a></li>
-				   <li><a href="location.html">Location</a></li>
-				   <li><a href="optimization.html">Optimization</a></li>
+				   <li><a href="cellular_form.html">Cellular Forms</a></li>
+				   <li><a href="tasks.html">Tasks and Work Order</a></li>
+				   <li><a href="attendance.html">Attendance</a></li>
+				   <li><a href="location.html">Location and Geo Coding</a></li>
+				   <li><a href="">Proof of delivery</a></li>
+				   <li><a href="routing_optimization.html">Routing and Optimization</a></li>
 				  </ul>
 				 </li>
 				 <li><a >Industries</a>
@@ -113,16 +121,18 @@
 				  </ul>
 				 </li>
 				 <li><a href="news.html">News</a></li>
-				 <li><a href="support.html">Support</a></li>
+				 <li><a href="help_center-faq.html">Support</a></li>
 				 <li><a href="contact_us.html">Contact us</a></li>
 				</ul>
 			</div>
 			<div class="section-inner">
 				<div class="cta-container">
-					<h1 class="splash">Attendance Reports</h1>				
+					<div class="splash">
+						<h1>Attendance</h1>
+					</div>			
 				</div>
 				<div class="cta-container-bottom">
-					<span class="arrow-slide"></span>
+					<a href="#content" id="scrolling-bottom"><span class="arrow-slide"></span></a>
 					<div class="bottom-right">
 						<div class="social">
 							<a href=""><img src="img/facebook.png" width="30" height="30" hspace="5"></a>
@@ -142,7 +152,7 @@
 				</div>
 			</div>
 		</section>
-		<section class="info">
+		<section id="content" class="info">
 			<div class="section-assistance">
 				<div class="section-inner">
 					<p class="comment-gray comment-center">The Attendance module of OfficeTrack allows workers to report work hours from the field, using their mobile phone. Attendance reporting is done through OfficeCore application, OfficeCore IVR service, or by sending SMS through Office Core SMSC. Using this service, managers receive a complete and up-to-date attendance overview of all his/her workers. The reports are displayed in managerial Internet site, witch information about the location & time where and when the attendance report was made.This information can be exported and displayed on a number of various reports. The service includes automatic export of the attendance reports to the organizational payroll system.</p>

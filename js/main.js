@@ -1,5 +1,4 @@
 $(document).ready(function(){
-  console.log("capsdjaspdojaspdpojaspdojas")
   $('.menujq > ul > li:has(ul)').addClass('desplegable');
    $('.menujq > ul > li > a').click(function() {
      var comprobar = $(this).next();
@@ -35,5 +34,36 @@ $(document).ready(function(){
         // Animation complete.
          if ($(this).is(':visible')) $(this).css('display','block'); 
       });
+   });
+
+   $(function() {
+      $('.tabs nav li').on('click', function() {
+        show_content($(this).index());
+      });
+      
+      show_content(0);
+
+      function show_content(index) {
+        // Make the content visible
+        $('.tabs .content.visible').removeClass('visible');
+        $('.tabs .content:nth-of-type(' + (index + 1) + ')').addClass('visible');
+
+        // Set the tab to selected
+        $('.tabs nav li.selected').removeClass('selected');
+        $('.tabs nav li:nth-of-type(' + (index + 1) + ')').addClass('selected');
+      }
+    });
+
+
+   $("#scrolling-bottom").on('click', function(e) {
+       // prevent default anchor click behavior
+        e.preventDefault();
+ 
+       $('html, body').animate({
+           scrollTop: $(this.hash).offset().top
+         },1000, function(){
+            window.location.hash = this.hash;
+         });
+
    });
 });

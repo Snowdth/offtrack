@@ -12,7 +12,7 @@
 
 	
 	<div class="wrapper">
-		<section class="optimization-panelgrid">
+		<section class="help_center-panelgrid">
 			<header class="header">
 				<div class="top-bar">
 					<div class="logo-container">
@@ -35,19 +35,23 @@
 									</li>
 									<li>
 										<span class="subsection"></span>
-										<a class="section-option" href="tasks.html">Tasks</a>
+										<a class="section-option" href="tasks.html">Tasks and Work Order</a>
 									</li>
 									<li>
 										<span class="subsection"></span>
-										<a class="section-option" href="attendance_reports.html">Attendance</a>
+										<a class="section-option" href="attendance.html">Attendance</a>
 									</li>
 									<li>
 										<span class="subsection"></span>
-										<a class="section-option" href="location.html">Location</a>
+										<a class="section-option" href="location.html">Location and Geo Coding</a>
 									</li>
-									<li class="subsection-active">
+									<li>
 										<span class="subsection"></span>
-										<a class="section-option" href="optimization.html">Optimization</a>
+										<a class="section-option" href="">Proof of delivery</a>
+									</li>
+									<li>
+										<span class="subsection"></span>
+										<a class="section-option" href="routing_optimization.html">Routing and Optimization</a>
 									</li>
 								</ul>
 							</li>
@@ -74,21 +78,24 @@
 								</ul>
 							</li>
 							<li><a href="news.html" class="appbar-nav-section button">News</a></li>
-							<li><a href="support.html" class="appbar-nav-section button">Support</a></li>
+							<li><a href="help_center-faq.html" class="appbar-nav-section button section-active">Support</a></li>
 							<li><a href="contact_us.html" class="appbar-nav-section button">Contact us</a></li>
 						</ul>
 					</div>
 					<div class="sign-in">
 						<div class="hamburger"></div>
-						<button class="button-transparent" onclick="window.location.href = 'login_back.html';">
-							<span>Free Trial</span>
-						</button>
-						<button class="button-blue" onclick="window.location.href = 'login_back.html';">
-							<span>Login</span>
-						</button>
+						<a href="login_back.html">
+							<button class="button-transparent">
+								<span>Free Trial</span>
+							</button>
+						</a>
+						<a href="login_back.html">
+							<button class="button-blue">
+								<span>Login</span>
+							</button>
+						</a>
 					</div>
-
-				</div>
+				</div>		
 			</header>
 			<div class="menujq">
 				<ul>
@@ -97,11 +104,12 @@
 				 <li><a href="about_us.html">About us</a></li>
 				 <li><a >Services</a>
 				   <ul>
-				   <li><a href="cellular_form.html">Cellular Form</a></li>
-				   <li><a href="tasks.html">Tasks</a></li>
-				   <li><a href="attendance_reports.html">Attendance</a></li>
-				   <li><a href="location.html">Location</a></li>
-				   <li><a href="optimization.html">Optimization</a></li>
+				   <li><a href="cellular_form.html">Cellular Forms</a></li>
+				   <li><a href="tasks.html">Tasks and Work Order</a></li>
+				   <li><a href="attendance.html">Attendance</a></li>
+				   <li><a href="location.html">Location and Geo Coding</a></li>
+				   <li><a href="">Proof of delivery</a></li>
+				   <li><a href="routing_optimization.html">Routing and Optimization</a></li>
 				  </ul>
 				 </li>
 				 <li><a >Industries</a>
@@ -113,16 +121,23 @@
 				  </ul>
 				 </li>
 				 <li><a href="news.html">News</a></li>
-				 <li><a href="support.html">Support</a></li>
+				 <li><a href="help_center-faq.html">Support</a></li>
 				 <li><a href="contact_us.html">Contact us</a></li>
 				</ul>
 			</div>
 			<div class="section-inner">
 				<div class="cta-container">
-					<h1 class="splash">Optimization</h1>				
+					<div class="splash">
+						<h1>Help Center - Downloads</h1>
+						<p>Welcome to the OfficeCore Help Center</p>
+						<div class="container-button">
+							<a href="help_center-faq.html"><button class="button-blue">SEE OUR FAQ</button></a>
+						</div>
+					</div>			
+					
 				</div>
 				<div class="cta-container-bottom">
-					<span class="arrow-slide"></span>
+					<a href="#content" id="scrolling-bottom"><span class="arrow-slide"></span></a>
 					<div class="bottom-right">
 						<div class="social">
 							<a href=""><img src="img/facebook.png" width="30" height="30" hspace="5"></a>
@@ -142,44 +157,25 @@
 				</div>
 			</div>
 		</section>
-		<section class="info">
-			<div class="section-assistance">
-				<div class="section-inner">
-					<p class="comment-gray comment-center">The daily planning process of field agents routes, including order of tasks, and time slots scheduling, is an operational challenge which increases significantly the overhead costs of operations.<br><br>
-					The Office Track Optimizer interface allows users to easily define a set the distribution constraints mapped against organizational resources, in order to get optimal routes from the system. This is done by talking into account travel distances, vailable time slots, number of planned tasks, delivery capacity of a vehicle, special priorities if exists, and resource skills.<br><br>
-					In addition, the system allows agents to re-optimize his/her routs and tasks from the field, based on current conditions, using his/her Office Track mobile application. Managers can then investigate the gaps between planned and performed activities, in order to understand the gaps, and if needed, improve the balance of resources, transportation costs and overall performance.</p>
-					<div class="video">
-						<iframe width="900" height="510" src="https://www.youtube.com/embed/UIrGmEhVzig" frameborder="0" allowfullscreen></iframe>
-					</div>
+		<section id="content" class="section-downloads info">
+			<div class="column-left">
+				<h3>Technical Materials</h3>
+				<div class="column">
+					<span><a href="">OfficeTrack API Reference</a></span>
+					<span><a href="">OfficeTrack Attendance Reports Interface</a></span>
+					<span><a href="">Automic Import of Points of Interest into OfficeTrack - File Structure</a></span>
+					<span><a href="">OfficeTrack Offline File Upload Interface - API and File Structures</a></span>
+					<span><a href="">OfficeTrack Task Upload Interface - API and File Structures</a></span>
+					<span><a href="">SmsCenter API Reference</a></span>
 				</div>
-				<div class="column left">
-					<h3>Main Features</h3>
-					<p>The optimization module plans optimal utilization of resources for any given workday, based on:</p>
-					<p>• Geographical distances to customers locations.</p>
-					<p>• Time slots provided by customers.</p>
-					<p>• Skills of agents.</p>
-					<p>• Capacity of vehicles.</p>
-					<p>• Expected duration of customers service time.</p>
-					<p>• Capital and variable costs of resources.</p>
-				</div>
-				<div class="column right">
-					<h3>Key Benefits</h3>
-					<li>
-						<i class="check"></i>
-						<p>Major savings in time, expenses and resources.</p>
-					</li>
-					<li>
-						<i class="check"></i>
-						<p>Improved field work efficiency.</p>
-					</li>
-					<li>
-						<i class="check"></i>
-						<p>Optimal utilization of resources.</p>
-					</li>
-					<li>
-						<i class="check"></i>
-						<p>Improved long term work planning.</p>
-					</li>
+			</div>
+			<div class="column-right">
+				<h3>User Guides</h3>
+				<div class="column">
+					<span><a href="">OfficeTrack Management System User Guide</a></span>
+					<span><a href="">OfficeTrack Android Application User Guide</a></span>
+					<span><a href="">OfficeTrack iPhone Application User Guide</a></span>
+					<span><a href="">Register And Install The OfficeTrack Android</a></span>
 				</div>
 			</div>
 		</section>

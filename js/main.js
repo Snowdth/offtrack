@@ -51,6 +51,8 @@ $(document).ready(function(){
         // Set the tab to selected
         $('.tabs nav li.selected').removeClass('selected');
         $('.tabs nav li:nth-of-type(' + (index + 1) + ')').addClass('selected');
+
+        
       }
     });
 
@@ -66,4 +68,32 @@ $(document).ready(function(){
          });
 
    });
+
+
+      $('.tabs .menu-container').on("click",function() {
+        $( '.tabs .menu-container-inner' ).toggleClass("visible", 1000, "easeOutSine");
+        $( '.tabs .container' ).toggleClass("no-visible", 1000, "easeOutSine");
+      });
+      $('.tabs .menu-container-inner li').on("click",function() {
+        $('.tabs .menu-container-inner').removeClass('visible' , 1000, "easeOutSine");
+        $('.tabs .container').removeClass('no-visible' , 1000, "easeOutSine");
+      });
+   
+    /*$(window).resize(function() {
+      if($(window).width() < 1200){
+       $('.tabs nav').css("display", "none");
+    }
+
+    if($(window).width() > 1200){
+       $('.tabs nav').css("display", "inline-block");
+    }
+   });
+
+    if($(window).width() < 1200){
+       // $('.tabs nav li.selected').removeClass('selected');
+       $('.tabs nav').css("display", "none");
+    }
+    if($(window).width() > 1200){
+       $('.tabs nav').css("display", "inline-block");
+    }*/
 });

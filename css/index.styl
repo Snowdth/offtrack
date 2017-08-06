@@ -114,7 +114,7 @@ input
 			border-bottom 2px solid
 			border-color transparent
 			font-size 16px
-			color #FAF3F3
+			color white
 			display inline-block
 			height 23px
 		img
@@ -900,6 +900,7 @@ input
 	max-width 920px
 	display none
 	margin 0 40px
+	background-color white
 	border-radius 6px
 	box-shadow: 0 0 5px 0 rgba(23, 27, 40, 0.12);
 	border 1px solid rgba(239,239,239,0.4)
@@ -982,6 +983,8 @@ input
 		z-index 1
 		position relative
 		top -34px
+.info-backgroundcolor
+	background-color #fafafa
 @media only screen and (max-width 1600px)
 	.container-login
 		display none
@@ -991,6 +994,10 @@ input
 		margin 0 auto
 		position relative
 @media only screen and (max-width 1500px)
+	.tabs .content.visible
+		min-width auto
+	.tabs .content
+		max-width 718px
 	.video
 		iframe
 			z-index 2
@@ -1005,10 +1012,13 @@ input
 	.cta-container
 		width 1200px		
 @media only screen and (max-width 1400px)
-	.tabs .content.visible
-		min-width auto
-	.tabs .content
-		max-width 718px		
+	.section-downloads
+		padding 30px 10px 100px 10px !important
+		text-align center 
+	.column-left
+	.column-right
+		display block !important
+		float none !important	
 @media only screen and (max-width 1200px)
 	.splash
 		font-size 76px !important
@@ -1018,13 +1028,6 @@ input
 		width 1050px
 	.menu-container
 		display inline-block
-	.section-downloads
-		padding 30px 10px 100px 10px !important
-		text-align center 
-	.column-left
-	.column-right
-		display block !important
-		float none !important	
 	.menujq ul
 		position relative
 		aria-expanded false
@@ -1142,7 +1145,7 @@ input
 		.container
 			display block
 			min-width 100%
-			padding 0 10px
+			padding 0 30px
 		.content
 			padding 20px 20px 50px !important
 			min-width 100% !important
@@ -1222,6 +1225,9 @@ input
 		.center
 			h1
 				font-size 48px
+	.tabs
+		.container
+			padding 0 10px
 @media only screen and (max-width 732px)
 	.check
 		display none !important
@@ -1231,6 +1237,7 @@ input
 				text-align center
 	.section-downloads .column
 		width auto
+		height auto
 	
 	.cta-container
 		h1

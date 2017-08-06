@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css?family=PT+Sans");
 @font-face {
   font-family: Dharma Gothic E;
-  src: url("../font/dharma-gothic-e/DharmaGothicE_Regular_R.otf");
+  src: url("../font/dharma-gothic-e/DharmaGothicE_Regular_R.otf"), url("../font/dharma-gothic-e/DharmaGothicE_Regular_R.eot");
   font-style: normal;
 }
 @font-face {

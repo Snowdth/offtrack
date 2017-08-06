@@ -528,7 +528,7 @@ input {
   position: absolute;
   padding-right: 20px;
   margin-right: 44px;
-  width: 548px;
+  width: 478px;
   right: 0;
   top: 50px;
   -webkit-transform: translateY(-28%);
@@ -551,7 +551,7 @@ input {
   color: #284576;
 }
 .section-inner-loginform .form-login .title {
-  width: 453px;
+  width: 398px;
   margin: 51px auto 36px;
 }
 .section-inner-loginform .form-login a {
@@ -576,8 +576,8 @@ input {
   -webkit-box-shadow: 0px 1px 30px -14px #6b6b6b;
   box-shadow: 0px 1px 30px -14px #6b6b6b;
   border-radius: 4px;
-  height: 69px;
-  width: 472px;
+  height: 60px;
+  width: 388px;
   font-size: 20px;
   padding: 10px 10px 12px 20px;
   margin-bottom: 10px;
@@ -1669,6 +1669,7 @@ input {
   .login_back-panelgrid .section-inner-loginform {
     width: 100%;
     padding: 0;
+    max-width: 371px;
   }
   .login_back-panelgrid .section-inner-loginform .form-login a {
     margin: 30px 0;

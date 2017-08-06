@@ -1,28 +1,30 @@
 @import 'nib'
 @import url('https://fonts.googleapis.com/css?family=PT+Sans');
 @font-face 
-	font-family Dharma Gothic E
-	src: url(../font/dharma-gothic-e/DharmaGothicE_Regular_R.otf),
-		url(../font/dharma-gothic-e/DharmaGothicE_Regular_R.eot);
-	font-style normal
-	
-@font-face 
-	font-family Dharma Gothic E Light
-	src: url(../font/dharma-gothic-e/DharmaGothicE_Light_R.otf)
-	font-style Light
+	font-family 'dharma'
+	src: url('../fonts/DharmaGothicE_Regular_R.eot')
+    src: url('../fonts/DharmaGothicE_Regular_R.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/DharmaGothicE_Regular_R.woff') format('woff'),
+         url('../fonts/DharmaGothicE_Regular_R.ttf') format('truetype'),
+         url('../fonts/DharmaGothicE_Regular_R.svg#DharmaGothicE_Regular_R') format('svg')
+    font-weight: normal
+    font-style: normal
 html
-body
 	margin 0
-	height 100%
-html
 	height 100%
 	width 100%
 body
+	margin 0
+	height 100%
+	width 100%
 	background white
 	font-family 'PT Sans'
 	font-style normal
 	-webkit-font-smoothing antialiased
-	
+html
+	margin 0
+	height 100%
+	width 100%
 li
 	list-style none
 ul
@@ -34,7 +36,6 @@ a
 *:before
 *:after
 	box-sizing border-box
-
 article
 aside
 details
@@ -47,7 +48,6 @@ menu
 nav
 section
 	display block;
-
 h2
 h1
 p
@@ -59,18 +59,16 @@ h5
 	line-height 22px
 	color #e1e5ea
 h2
-	color #414641
+	color #505861
 	font-size 35px
 h3
-	color #414641
+	color #505861
 	font-size 30px
 h4
-	color #414641
+	color #505861
 	font-size 19px
 input
-	outline 0px
-
-	
+	outline 0px	
 ::-webkit-scrollbar
 	background #f4f4f4
 	width 8px
@@ -78,11 +76,9 @@ input
 ::-webkit-scrollbar-thumb
 	background #222
 	width 8px
-
 .dropdown-menu
 	.section-option
 		font-size 14px
-
 .header
 	padding 38px 40px 20px
 .top-bar
@@ -125,7 +121,7 @@ input
 			margin 0 0 2px 7px
 .appbar-nav-section:hover
 	transition 0.15s
-	border-color #959292
+	border-color white
 	box-sizing border-box
 .section-option:hover
 	transition 0.1s
@@ -157,7 +153,7 @@ input
 	margin-top -4px
 	z-index 101
 	margin-bottom 20px
-	background-color rgba(120, 120, 120,0.6)
+	background-color rgba(0, 0, 0,0.6)
 	backdrop-filter: blur(10px);
 	//background-color: rgba(0, 0, 0, 0.6);
 	padding 10px 0
@@ -170,7 +166,7 @@ input
 	&::after
 		content ""
 		border 8px solid transparent
-		border-bottom 8px solid rgba(120, 120, 120,0.6)
+		border-bottom 8px solid rgba(0, 0, 0,0.6)
 		position absolute
 		top -16px
 		right 21px
@@ -195,13 +191,11 @@ input
 		display block !important
 .section-active
 	border-bottom 2px solid !important
-	border-color #959292 !important
+	border-color white !important
 	box-sizing border-box
 .section-inactive
 	border-bottom 0 !important
-	border-color #959292 !important
-
-
+	border-color white !important
 .sign-in
 	min-width 229px
 	right 0
@@ -333,63 +327,62 @@ input
 	min-height 800px
 .about_us-panelgrid
 	position relative
-	background url('../img/wallpaper.png') 0% 0% / cover no-repeat
+	background url('../img/slide02.jpg') 0% 0% / cover no-repeat
 	background-position center	
 .index-panelgrid
 	position relative
-	background url('../img/slide.png') 0% 0% / cover no-repeat
+	background url('../img/slide.jpg') 0% 0% / cover no-repeat
 	background-position center
 	height 100%	
 	min-height 600px
 .attendance-panelgrid
 	position relative
-	background:url('../img/attendancereports.png') 0% 0% / cover no-repeat
+	background:url('../img/slide04.jpg') 0% 0% / cover no-repeat
 	background-position center	
 .cellular_form-panelgrid
 	position relative
-	background url('../img/cellularform.png') 0% 0% / cover no-repeat
+	background url('../img/slide03.jpg') 0% 0% / cover no-repeat
 	background-position center	
 .tasks-panelgrid
 	position relative
-	background url('../img/tasks.png') 0% 0% / cover no-repeat
+	background url('../img/tasks.jpg') 0% 0% / cover no-repeat
 	background-position center	
 .contact_us-panelgrid
 	position relative
-	background url('../img/contact_us.png') 0% 0% / cover no-repeat
+	background url('../img/contact_us.jpg') 0% 0% / cover no-repeat
 	background-position center	
 .location-panelgrid
 	position relative
-	background url('../img/location.png') 0% 0% / cover no-repeat
+	background url('../img/location.jpg') 0% 0% / cover no-repeat
 	background-position center	
 .routing_optimization-panelgrid
 	position relative
-	background: url('../img/optimization.png') 0% 0% / cover no-repeat
+	background: url('../img/optimization.jpg') 0% 0% / cover no-repeat
 	background-position center	
 .logistic_distribution-panelgrid
 	position relative
-	background: url('../img/logistic_distribution.png') 0% 0% / cover no-repeat
+	background: url('../img/logitic.jpg') 0% 0% / cover no-repeat
 	background-position center
 .service_maintenance-panelgrid
 	position relative
-	background: url('../img/service_maintenance.png') 0% 0% / cover no-repeat
+	background: url('../img/service_maintenance.jpg') 0% 0% / cover no-repeat
 	background-position center
 .security-panelgrid
 	position relative
-	background: url('../img/security.png') 0% 0% / cover no-repeat
+	background: url('../img/security.jpg') 0% 0% / cover no-repeat
 	background-position center
 .sales-panelgrid
 	position relative
-	background: url('../img/sales.png') 0% 0% / cover no-repeat
+	background: url('../img/sales.jpg') 0% 0% / cover no-repeat
 	background-position center
 .news-panelgrid
 	position relative
-	background: url('../img/news.png') 0% 0% / cover no-repeat
+	background: url('../img/news.jpg') 0% 0% / cover no-repeat
 	background-position center
 .help_center-panelgrid
 	position relative
-	background: url('../img/help_center.png') 0% 0% / cover no-repeat
-	background-position center
-	
+	background: url('../img/help_center.jpg') 0% 0% / cover no-repeat
+	background-position center	
 .section-inner-login
 	vertical-align: middle;
 	width auto
@@ -474,7 +467,7 @@ input
 	background url('../img/confetti.png')
 	margin 0 auto 100px
 	.section-justify
-		max-width 1050px
+		max-width 1100px
 		margin 0 auto
 		h5
 			color #505861
@@ -490,7 +483,6 @@ input
 		margin 0 auto
 		.section-inner
 			line-height 30px
-			max-width 960px
 			margin 0 auto
 			.form
 				h2
@@ -500,6 +492,8 @@ input
 					text-align justify !important
 					padding 30px 0
 					line-height 30px
+				strong
+					font-family sans-serif
 				.form-content
 					width 550px
 					input
@@ -517,8 +511,7 @@ input
 		h5
 			font-size 15px
 			line-height: 200%
-			text-align center
-		
+			text-align center	
 	.section-tasks
 		margin 0 auto
 		max-width 1200px
@@ -539,6 +532,7 @@ input
 			h2
 				line-height 55px
 				font-size 32px
+				font-weight normal
 			
 		.section-inner-columnright
 			padding 0 0 0 40px
@@ -547,10 +541,9 @@ input
 			display inline-block
 			h5
 				font-size 17px
-				text-align justify
-			
+				text-align justify		
 	.section-information
-		max-width 1000px
+		max-width 1100px
 		margin 0 auto
 		.text
 			p
@@ -569,16 +562,45 @@ input
 	font-size 20px
 	padding 10px 10px 12px 20px
 	margin-bottom 10px
-	border 1px solid rgba(239, 239, 239, 0.5)
-	box-shadow 0px 1px 30px -14px #6b6b6b
+	box-shadow: 0 0 5px 0 rgba(23, 27, 40, 0.12);
+	border 1px solid rgba(239,239,239,0.4)
 	color #555
-	::placeholder
-		opacity 0.6
+
 .form-control:focus
 	outline 0
 	border-color #66afe9
 	box-shadow inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(102, 175, 233, .6)
 	color black
+.form
+	.form-content
+		input::-webkit-input-placeholder
+			color #505861
+			font-size 21px
+			opacity 0.5
+		input:-moz-placeholder
+			color #505861
+			font-size 21px
+			opacity 0.5
+		input:-ms-input-placeholder
+			color #505861
+			font-size 21px
+			opacity 0.5
+		*::-webkit-input-placeholder
+			color #505861
+			font-size 21px
+			opacity 0.5
+		*:-moz-placeholder
+			color #505861
+			font-size 21px
+			opacity 0.5
+		*::-moz-placeholder
+			color #505861
+			font-size 21px
+			opacity 0.5
+		*:-ms-input-placeholder 
+			color #505861
+			font-size 21px
+			opacity 0.5
 .section-solution
 	padding 80px 0 80px 0
 	.text
@@ -603,13 +625,12 @@ input
 			p
 				font-size 13px
 				text-align justify
-
 .icons-aboutus
 	margin-right 20px
 	img
 		vertical-align middle
 .readmore
-	background url("../img/shutterstock.png") 0% 0%/cover no-repeat
+	background url("../img/shutterstock.jpg") 0% 0%/cover no-repeat
 	background-position center
 	height 424px
 	width 100%
@@ -709,7 +730,6 @@ input
 		padding 30px 0
 	.video
 		padding 0 0 120px
-
 .section-tutorial-worldusers
 	.worldmap
 		position relative
@@ -726,9 +746,7 @@ input
 			transform translate(45%,-50%)
 			.text
 				width 450px
-				margin 0 auto
-		
-			
+				margin 0 auto					
 .tutorial-card
 	vertical-align top
 	width 300px
@@ -740,8 +758,6 @@ input
 	p
 		width 250px
 		height 109px
-
-
 .column
 	width 547px
 	li
@@ -774,7 +790,7 @@ input
 .section-downloads
 	overflow hidden
 	padding 30px 10px 150px 10px
-	max-width 1200px
+	max-width 1323px
 	margin 0 auto
 	.column-left
 	.column-right
@@ -790,13 +806,15 @@ input
 		float right
 	.column
 		border-radius: 6px;
-		box-shadow: 0px 1px 30px 1px #e7e7e7;
+		box-shadow: 0 0 5px 0 rgba(23, 27, 40, 0.12);
+		border 1px solid rgba(239,239,239,0.4)
 		padding: 20px;
 		display: inline-block;
 		align-items: stretch;
 		background: #fff;
 		color: #585858;
-		width: 550px;
+		width: 630.6px
+		height 385.7px
 		span
 			display block
 			border-bottom: 1px solid #e7e7e7;
@@ -805,10 +823,9 @@ input
 			width: 100%;
 			cursor: pointer;
 			a
-				color #414641
+				color #505861
 	h3
 		font-family Dharma Gothic E
-		font-weight 100
 		font-size 50px
 .section-news
 	max-width 1450px
@@ -843,8 +860,7 @@ input
 				.time-text
 					margin-top 5px
 					color #5A5858
-					opacity .8
-					
+					opacity .8					
 .tabs
 	padding 90px 0
 	position relative
@@ -855,26 +871,22 @@ input
 
 .tabs nav
 	border-radius 6px
-	border 1px solid #E7E7E7
-	box-shadow 0px 1px 30px 1px #E7E7E7
+	box-shadow: 0 0 5px 0 rgba(23, 27, 40, 0.12);
+	border 1px solid rgba(239,239,239,0.4)
 	padding 20px
 	display inline-block
 	align-items stretch
 	background white
 	color #585858
 	width 390px
-
-
 .tabs nav li
 	border-bottom 1px solid #E7E7E7
 	padding 20px 20px
 	text-align initial
 	width 100%
-	cursor pointer
-	
+	cursor pointer	
 .tabs nav li:last-child
 	border-bottom none
-
 .tabs nav li:hover,
 .tabs nav li.selected
 	color #3c75d8
@@ -884,14 +896,13 @@ input
 	vertical-align top
 	display inline-block
 	min-width auto
-
 .tabs .content	
 	max-width 920px
 	display none
 	margin 0 40px
-	border 1px solid #E7E7E7
 	border-radius 6px
-	box-shadow 0px 1px 30px 1px #E7E7E7
+	box-shadow: 0 0 5px 0 rgba(23, 27, 40, 0.12);
+	border 1px solid rgba(239,239,239,0.4)
 	padding 20px 0px
 	top 0px
 	left 390px
@@ -899,8 +910,6 @@ input
 	overflow hidden
 	opacity 0
 	transition opacity 0.1s linear 0s
-
-
 .tabs .content.visible
 	min-width 920px
 	display block
@@ -909,20 +918,16 @@ input
 	h4
 		margin-top 20px
 		font-size 16px
-
 .tabs .content p
 	padding-bottom 2px;
 	line-height 28px
 	font-size 15px
 .tabs .content strong
 	color #6DA0F9
-
 .tabs .content p:last-of-type
 	padding-bottom 0px; 
-
 .video
-	text-align center
-	
+	text-align center	
 .menujq a 
 	display none
 .mini-blue
@@ -969,6 +974,14 @@ input
 	float left
 .right
 	float right
+.video
+	iframe
+		z-index 2
+		position relative
+	img
+		z-index 1
+		position relative
+		top -34px
 @media only screen and (max-width 1600px)
 	.container-login
 		display none
@@ -978,16 +991,24 @@ input
 		margin 0 auto
 		position relative
 @media only screen and (max-width 1500px)
+	.video
+		iframe
+			z-index 2
+			position relative
+			width 900px
+			height 510px
+		img
+			z-index 1
+			position relative
+			top -34px
+			width 868px
 	.cta-container
-		width 1200px
-	
-		
+		width 1200px		
 @media only screen and (max-width 1400px)
 	.tabs .content.visible
 		min-width auto
 	.tabs .content
-		max-width 718px	
-	
+		max-width 718px		
 @media only screen and (max-width 1200px)
 	.splash
 		font-size 76px !important
@@ -1003,8 +1024,7 @@ input
 	.column-left
 	.column-right
 		display block !important
-		float none !important
-	
+		float none !important	
 	.menujq ul
 		position relative
 		aria-expanded false
@@ -1023,36 +1043,29 @@ input
 		color #fff
 		text-decoration none
 		font-size 16px
-		line-height 16px
-	
+		line-height 16px	
 	.menujq ul li a:before 
 		content "\25CF\00A0 "
 		width 28px
 		display inline-block
-		vertical-align top
-	
+		vertical-align top	
 	.menujq ul li.drop-down > a:before,
 	.menujq ul li ul li.drop-down > a:before 
-		content "\25BA\00A0"
-	
+		content "\25BA\00A0"	
 	.menujq ul li.drop-down.active > a:before,
 	.menujq ul li ul li.drop-down.active > a:before
-		content "\25BC\00A0 "
-	
+		content "\25BC\00A0 "	
 	.menujq ul ul, .menujq ul ul ul 
 		display none
-		width 100%
-	
+		width 100%	
 	.menujq ul ul a 
 		padding-left 20px
 		background  rgba(45,45,45,0.9)
-		text-transform capitalize
-	
+		text-transform capitalize	
 	.menujq ul ul ul a 
 		padding-left 40px
 		background #ED9C54
-		text-transform capitalize
-	
+		text-transform capitalize	
 	.index-panelgrid
 		.splash
 			font-size 47px !important
@@ -1098,8 +1111,7 @@ input
 		border-radius 100px
 	.section-inner
 	.section-solution
-		padding 20px 10px
-	
+		padding 20px 10px	
 	.section-inner-columnleft
 	.section-inner-columnright
 		display inherit !important
@@ -1141,8 +1153,7 @@ input
 		.menu-container-inner.visible
 			display inline-block !important
 		.container.no-visible
-			display none !important
-					
+			display none !important					
 @media only screen and (max-width 979px)
 	.login_back-panelgrid
 	.about_us-panelgrid
@@ -1175,6 +1186,9 @@ input
 		iframe
 			width 510px
 			height 293px
+		img
+			top -16px
+			width 478px
 	.column
 		padding 0 18px
 		
@@ -1226,8 +1240,7 @@ input
 		width 260px
 	.check_list
 		.check
-			display none
-			
+			display none			
 	.login_back-panelgrid h1 
 	.about_us-panelgrid h1
 	.attendance-panelgrid h1
@@ -1242,9 +1255,7 @@ input
 	.sales-panelgrid h1
 	.news-panelgrid h1
 	.help_center-panelgrid h1
-		font-size 90px !important
-	
-			
+		font-size 90px !important		
 @media only screen and (max-width 570px)
 	.index-panelgrid
 		.splash
@@ -1286,6 +1297,9 @@ input
 		iframe
 			width 288px
 			height 168px
+		img
+			top -10px
+			width 256px
 	.social
 	.text
 		width inherit !important
@@ -1319,7 +1333,6 @@ input
 		p
 			font-size 17px !important
 			line-height 28px !important
-	
 	.section-news
 		.section-news-card
 			width 90%
@@ -1337,8 +1350,6 @@ input
 			padding 0
 	.case_study .content .center h1
 		font-size 33px
-
-	
 	.tabs nav
 		width auto
 		margin 0 10px

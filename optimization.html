@@ -12,7 +12,7 @@
 
 	
 	<div class="wrapper">
-		<section class="routing_optimization-panelgrid">
+		<section class="optimization-panelgrid">
 			<header class="header">
 				<div class="top-bar">
 					<div class="logo-container">
@@ -35,23 +35,19 @@
 									</li>
 									<li>
 										<span class="subsection"></span>
-										<a class="section-option" href="tasks.html">Tasks and Work Order</a>
+										<a class="section-option" href="tasks.html">Tasks</a>
 									</li>
 									<li>
 										<span class="subsection"></span>
-										<a class="section-option" href="attendance.html">Attendance</a>
+										<a class="section-option" href="attendance_reports.html">Attendance</a>
 									</li>
 									<li>
 										<span class="subsection"></span>
-										<a class="section-option" href="location.html">Location and Geo Coding</a>
-									</li>
-									<li>
-										<span class="subsection"></span>
-										<a class="section-option" href="">Proof of delivery</a>
+										<a class="section-option" href="location.html">Location</a>
 									</li>
 									<li class="subsection-active">
 										<span class="subsection"></span>
-										<a class="section-option" href="routing_optimization.html">Routing and Optimization</a>
+										<a class="section-option" href="optimization.html">Optimization</a>
 									</li>
 								</ul>
 							</li>
@@ -78,24 +74,21 @@
 								</ul>
 							</li>
 							<li><a href="news.html" class="appbar-nav-section button">News</a></li>
-							<li><a href="help_center-faq.html" class="appbar-nav-section button">Support</a></li>
+							<li><a href="support.html" class="appbar-nav-section button">Support</a></li>
 							<li><a href="contact_us.html" class="appbar-nav-section button">Contact us</a></li>
 						</ul>
 					</div>
 					<div class="sign-in">
 						<div class="hamburger"></div>
-						<a href="login_back.html">
-							<button class="button-transparent">
-								<span>Free Trial</span>
-							</button>
-						</a>
-						<a href="login_back.html">
-							<button class="button-blue">
-								<span>Login</span>
-							</button>
-						</a>
+						<button class="button-transparent" onclick="window.location.href = 'login_back.html';">
+							<span>Free Trial</span>
+						</button>
+						<button class="button-blue" onclick="window.location.href = 'login_back.html';">
+							<span>Login</span>
+						</button>
 					</div>
-				</div>		
+
+				</div>
 			</header>
 			<div class="menujq">
 				<ul>
@@ -104,12 +97,11 @@
 				 <li><a href="about_us.html">About us</a></li>
 				 <li><a >Services</a>
 				   <ul>
-				   <li><a href="cellular_form.html">Cellular Forms</a></li>
-				   <li><a href="tasks.html">Tasks and Work Order</a></li>
-				   <li><a href="attendance.html">Attendance</a></li>
-				   <li><a href="location.html">Location and Geo Coding</a></li>
-				   <li><a href="">Proof of delivery</a></li>
-				   <li><a href="routing_optimization.html">Routing and Optimization</a></li>
+				   <li><a href="cellular_form.html">Cellular Form</a></li>
+				   <li><a href="tasks.html">Tasks</a></li>
+				   <li><a href="attendance_reports.html">Attendance</a></li>
+				   <li><a href="location.html">Location</a></li>
+				   <li><a href="optimization.html">Optimization</a></li>
 				  </ul>
 				 </li>
 				 <li><a >Industries</a>
@@ -121,18 +113,16 @@
 				  </ul>
 				 </li>
 				 <li><a href="news.html">News</a></li>
-				 <li><a href="help_center-faq.html">Support</a></li>
+				 <li><a href="support.html">Support</a></li>
 				 <li><a href="contact_us.html">Contact us</a></li>
 				</ul>
 			</div>
 			<div class="section-inner">
 				<div class="cta-container">
-					<div class="splash">
-						<h1>Routing and Optimization</h1>
-					</div>				
+					<h1 class="splash">Optimization</h1>				
 				</div>
 				<div class="cta-container-bottom">
-					<a href="#content" id="scrolling-bottom"><span class="arrow-slide"></span></a>
+					<span class="arrow-slide"></span>
 					<div class="bottom-right">
 						<div class="social">
 							<a href=""><img src="img/facebook.png" width="30" height="30" hspace="5"></a>
@@ -152,22 +142,18 @@
 				</div>
 			</div>
 		</section>
-		<section id="content" class="info">
+		<section class="info">
 			<div class="section-assistance">
 				<div class="section-inner">
 					<p class="comment-gray comment-center">The daily planning process of field agents routes, including order of tasks, and time slots scheduling, is an operational challenge which increases significantly the overhead costs of operations.<br><br>
 					The Office Track Optimizer interface allows users to easily define a set the distribution constraints mapped against organizational resources, in order to get optimal routes from the system. This is done by talking into account travel distances, vailable time slots, number of planned tasks, delivery capacity of a vehicle, special priorities if exists, and resource skills.<br><br>
 					In addition, the system allows agents to re-optimize his/her routs and tasks from the field, based on current conditions, using his/her Office Track mobile application. Managers can then investigate the gaps between planned and performed activities, in order to understand the gaps, and if needed, improve the balance of resources, transportation costs and overall performance.</p>
 					<div class="video">
-						<iframe width="1088px" height="599px" src="https://www.youtube.com/embed/UIrGmEhVzig" frameborder="0" allowfullscreen></iframe>
-						<img src="img/shadow.png">
+						<iframe width="900" height="510" src="https://www.youtube.com/embed/UIrGmEhVzig" frameborder="0" allowfullscreen></iframe>
 					</div>
 				</div>
 				<div class="column left">
-					<div class="title_mini-blue">
-						<h3>Main Features</h3>
-						<div class="mini-blue"></div>
-					</div>
+					<h3>Main Features</h3>
 					<p>The optimization module plans optimal utilization of resources for any given workday, based on:</p>
 					<p>• Geographical distances to customers locations.</p>
 					<p>• Time slots provided by customers.</p>
@@ -177,10 +163,7 @@
 					<p>• Capital and variable costs of resources.</p>
 				</div>
 				<div class="column right">
-					<div class="title_mini-blue">
-						<h3>Key Benefits</h3>
-						<div class="mini-blue"></div>
-					</div>
+					<h3>Key Benefits</h3>
 					<li>
 						<i class="check"></i>
 						<p>Major savings in time, expenses and resources.</p>
@@ -219,7 +202,7 @@
 					</p>
 				</div>
 				<div class="telefons">
-					<img src="img/flags/flag-arg.png" vspace="13">
+					<img src="img/flags/flag-argentina.png" width="42" height="25" vspace="13">
 					<h5>ARGENTINA | OfficeCore</h5>
 					<p>Juan Pablo Moreno<br>
 						JPMoreno@officecore.com<br>

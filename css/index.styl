@@ -986,13 +986,12 @@ input
 .info-backgroundcolor
 	background-color #fafafa
 @media only screen and (max-width 1600px)
-	.container-login
-		display none
-	.section-inner-login
-		transform translateY(-31%)
+	.section-inner-login .container-login
+		width 482px
+	.login_back-panelgrid
+		padding 0 116px
 	.section-inner-loginform
-		margin 0 auto
-		position relative
+		transform translateY(-13%)
 @media only screen and (max-width 1500px)
 	.tabs .content.visible
 		min-width auto
@@ -1010,7 +1009,7 @@ input
 			top -34px
 			width 868px
 	.cta-container
-		width 1200px		
+		width 1200px
 @media only screen and (max-width 1400px)
 	.section-downloads
 		padding 30px 10px 100px 10px !important
@@ -1018,8 +1017,30 @@ input
 	.column-left
 	.column-right
 		display block !important
-		float none !important	
+		float none !important
+@media only screen and (max-width 1280px)
+	.section-inner-loginform
+		transform translateY(-28%)
+	.container-login
+		display none
+	.section-inner-login
+		transform translateY(-31%)
+	.section-inner-loginform
+		margin 0 auto
+		position relative
+	.login_back-panelgrid
+		.header
+			.logo-container
+				margin-left 0
+				width 100%
+				margin 0 auto
+				text-align center
+				.logo
+					width auto
+					
 @media only screen and (max-width 1200px)
+	
+
 	.splash
 		font-size 76px !important
 	.login_back-panelgrid
@@ -1132,15 +1153,6 @@ input
 				width inherit
 	.appbar-nav
 		display none
-	.login_back-panelgrid
-		.header
-			.logo-container
-				margin-left 0
-				width 100%
-				margin 0 auto
-				text-align center
-				.logo
-					width auto
 	.tabs
 		.container
 			display block

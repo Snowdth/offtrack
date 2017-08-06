@@ -1298,19 +1298,18 @@ input {
   background-color: #fafafa;
 }
 @media only screen and (max-width: 1600px) {
-  .container-login {
-    display: none;
+  .section-inner-login .container-login {
+    width: 482px;
   }
-  .section-inner-login {
-    -webkit-transform: translateY(-31%);
-    -moz-transform: translateY(-31%);
-    -o-transform: translateY(-31%);
-    -ms-transform: translateY(-31%);
-    transform: translateY(-31%);
+  .login_back-panelgrid {
+    padding: 0 116px;
   }
   .section-inner-loginform {
-    margin: 0 auto;
-    position: relative;
+    -webkit-transform: translateY(-13%);
+    -moz-transform: translateY(-13%);
+    -o-transform: translateY(-13%);
+    -ms-transform: translateY(-13%);
+    transform: translateY(-13%);
   }
 }
 @media only screen and (max-width: 1500px) {
@@ -1345,6 +1344,38 @@ input {
   .column-right {
     display: block !important;
     float: none !important;
+  }
+}
+@media only screen and (max-width: 1280px) {
+  .section-inner-loginform {
+    -webkit-transform: translateY(-28%);
+    -moz-transform: translateY(-28%);
+    -o-transform: translateY(-28%);
+    -ms-transform: translateY(-28%);
+    transform: translateY(-28%);
+  }
+  .container-login {
+    display: none;
+  }
+  .section-inner-login {
+    -webkit-transform: translateY(-31%);
+    -moz-transform: translateY(-31%);
+    -o-transform: translateY(-31%);
+    -ms-transform: translateY(-31%);
+    transform: translateY(-31%);
+  }
+  .section-inner-loginform {
+    margin: 0 auto;
+    position: relative;
+  }
+  .login_back-panelgrid .header .logo-container {
+    margin-left: 0;
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+  }
+  .login_back-panelgrid .header .logo-container .logo {
+    width: auto;
   }
 }
 @media only screen and (max-width: 1200px) {
@@ -1485,15 +1516,6 @@ input {
   }
   .appbar-nav {
     display: none;
-  }
-  .login_back-panelgrid .header .logo-container {
-    margin-left: 0;
-    width: 100%;
-    margin: 0 auto;
-    text-align: center;
-  }
-  .login_back-panelgrid .header .logo-container .logo {
-    width: auto;
   }
   .tabs .container {
     display: block;

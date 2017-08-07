@@ -382,12 +382,15 @@ input {
 }
 .splash {
   font-family: Dharma Gothic E;
-  font-weight: 100;
+  font-weight: normal;
   font-size: 75px;
   color: #fff;
+  line-height: 53px;
 }
 .splash h1 {
-  font-weight: 100;
+  font-weight: normal;
+  line-height: 89px;
+  margin-bottom: 9px;
 }
 .splash .button-blue {
   margin-top: 30px;
@@ -508,7 +511,7 @@ input {
 .section-inner-login {
   vertical-align: middle;
   width: auto;
-  top: 50%;
+  top: 40%;
   position: relative;
   -webkit-transform: translateY(-58%);
   -moz-transform: translateY(-58%);
@@ -555,7 +558,7 @@ input {
 }
 .section-inner-loginform .form-login .title {
   width: 398px;
-  margin: 51px auto 36px;
+  margin: 26px auto 36px;
 }
 .section-inner-loginform .form-login a {
   color: #284576;
@@ -576,14 +579,16 @@ input {
   resize: none;
   display: block;
   outline: 0;
-  -webkit-box-shadow: 0px 1px 30px -14px #6b6b6b;
-  box-shadow: 0px 1px 30px -14px #6b6b6b;
+  -webkit-box-shadow: 0 0 6px rgba(0,0,0,0.03);
+  box-shadow: 0 0 6px rgba(0,0,0,0.03);
   border-radius: 4px;
-  height: 60px;
+  height: 50px;
   width: 388px;
   font-size: 20px;
-  padding: 10px 10px 12px 20px;
-  margin-bottom: 10px;
+  padding: 0;
+  line-height: 50px;
+  text-indent: 16px;
+  margin-bottom: 5px;
   border: 1px solid #efefef;
   color: #555;
 }

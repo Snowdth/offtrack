@@ -525,6 +525,7 @@ input {
 }
 .section-inner-login .container-login h1 {
   font-size: 70px !important;
+  line-height: 0.89;
 }
 .section-inner-login .container-login .container-store {
   margin-top: 50px;

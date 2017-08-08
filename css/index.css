@@ -1745,6 +1745,7 @@ input {
   }
   .cta-container h1 {
     font-size: 55px;
+    line-height: 45px;
   }
   .container-store {
     position: relative;

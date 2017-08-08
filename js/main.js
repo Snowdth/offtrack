@@ -1,5 +1,4 @@
 $(document).ready(function(){
-  
   $('.menujq > ul > li:has(ul)').addClass('desplegable');
    $('.menujq > ul > li > a').click(function() {
      var comprobar = $(this).next();
@@ -92,7 +91,7 @@ $(document).ready(function(){
     }
   });
 
-
+  $(".change-language").theCombo();
     /*$(window).resize(function() {
       if($(window).width() < 1200){
        $('.tabs nav').css("display", "none");

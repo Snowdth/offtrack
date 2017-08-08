@@ -1,14 +1,15 @@
 @import url("https://fonts.googleapis.com/css?family=PT+Sans");
 @font-face {
-  font-family: 'dharma';
-  src: url("../fonts/DharmaGothicE_Regular_R.eot");
+    font-family: 'dharma';
+    src: url('../fonts/DharmaGothicE_Regular_R.eot');
+    src: url('../fonts/DharmaGothicE_Regular_R.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/DharmaGothicE_Regular_R.woff') format('woff'),
+         url('../fonts/DharmaGothicE_Regular_R.ttf') format('truetype'),
+         url('../fonts/DharmaGothicE_Regular_R.svg#DharmaGothicE_Regular_R') format('svg');
+    font-weight: normal;
+    font-style: normal;
 }
-src: url('../fonts/DharmaGothicE_Regular_R.eot?#iefix') format('embedded-opentype'),
-url('../fonts/DharmaGothicE_Regular_R.woff') format('woff'),
-url('../fonts/DharmaGothicE_Regular_R.ttf') format('truetype'),
-url('../fonts/DharmaGothicE_Regular_R.svg#DharmaGothicE_Regular_R') format('svg'),
-font-weight: normal,
-font-style: normal,
+
 html {
   margin: 0;
   height: 100%;
@@ -440,7 +441,7 @@ input {
   transform: translateY(80%);
 }
 .splash {
-  font-family: Dharma Gothic E;
+  font-family: 'Dharma Gothic E';
   font-weight: normal;
   font-size: 75px;
   color: #fff;
@@ -463,7 +464,7 @@ input {
 }
 .splash p {
     font-family: 'PT Sans';
-    font-size: 32px;
+    font-size: 22px;
     max-width: 800px;
     margin: 0 auto;
     line-height: 32px;
@@ -927,7 +928,7 @@ input {
   text-align: center;
 }
 .readmore .center h1 {
-  font-family: Dharma Gothic E;
+  font-family: 'Dharma Gothic E';
   font-weight: normal;
   font-size: 70px;
   line-height: 59px;
@@ -1163,7 +1164,7 @@ input {
   color: #505861;
 }
 .section-downloads h3 {
-  font-family: Dharma Gothic E;
+  font-family: 'Dharma Gothic E';
   font-size: 50px;
 }
 .section-news {
@@ -1744,6 +1745,7 @@ input {
   }
   .cta-container h1 {
     font-size: 55px;
+    line-height: 45px;
   }
   .container-store {
     position: relative;

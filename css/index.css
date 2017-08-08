@@ -280,6 +280,11 @@ input {
   border-color: #4482ef;
   border: 2px solid #4482ef;
   margin-left: 12px;
+  font-size: 14px;
+}
+.sign-in .button-transparent {
+  font-size: 14px;
+  height: 38px;
 }
 .button-transparent {
   cursor: pointer;
@@ -298,6 +303,7 @@ input {
   background-color: rgba(50,50,50,0.6);
 }
 .button-blue {
+  font-size: 16px;
   cursor: pointer;
   outline: 0px;
   background: #5892f8;
@@ -525,6 +531,7 @@ input {
 }
 .section-inner-login .container-login h1 {
   font-size: 70px !important;
+  line-height: 0.89;
 }
 .section-inner-login .container-login .container-store {
   margin-top: 50px;
@@ -865,6 +872,7 @@ input {
   font-family: Dharma Gothic E;
   font-weight: 100;
   font-size: 70px;
+  line-height: 59px;
 }
 .readmore .center .button-blue {
   width: 146px;
@@ -955,6 +963,7 @@ input {
 }
 .section-tutorial .button-blue {
   width: 125px;
+  font-size: 14px;
 }
 .section-tutorial p {
   margin: 0 auto;

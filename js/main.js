@@ -78,7 +78,20 @@ $(document).ready(function(){
         $('.tabs .menu-container-inner').removeClass('visible' , 1000, "easeOutSine");
         $('.tabs .container').removeClass('no-visible' , 1000, "easeOutSine");
       });
-   
+  
+
+  $(window).scroll(function(){
+    if( $(this).scrollTop() > 1 ){
+      $('.header-container').addClass('header-container2');
+      $('header .logo-container .logo img').attr('src', 'img/logo2.png');
+      $('header .logo-container .logo img').attr('width', '190');
+    } else {
+      $('.header-container').removeClass('header-container2');
+      $('header .logo-container .logo img').attr('src', 'img/logo.png');
+    }
+  });
+
+  $(".change-language").theCombo();
     /*$(window).resize(function() {
       if($(window).width() < 1200){
        $('.tabs nav').css("display", "none");

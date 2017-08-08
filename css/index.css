@@ -100,6 +100,58 @@ input {
 .header {
   padding: 38px 40px 20px;
 }
+.header-container2{
+  position: fixed;
+  z-index: 999;
+  width: 100%;
+}
+.header-container2 .header {
+  box-shadow: 0 0 10px rgba(0,0,0,0.2);
+  top: 0;
+  background-color: white;
+  width: 100%;
+  color: black;
+  font-weight: 600;
+  padding: 20px;
+  padding-bottom: 0;
+  border-bottom: 1px solid #e8e8e8;
+}
+.header-container2 .header .appbar-nav ul li  a {
+  color: black;
+  font-size: 17px;
+}
+.header-container2 .header .logo-container .logo img {
+  margin-top: 5px}
+.header-container2 .header .appbar-nav .section-option {
+  color: white;
+  font-weight: normal;
+  font-size: 15px;
+}
+.header-container2 .header .appbar-nav .appbar-nav-section:hover {
+  -webkit-transition: 0.15s;
+  -moz-transition: 0.15s;
+  -o-transition: 0.15s;
+  -ms-transition: 0.15s;
+  transition: 0.15s;
+  border-color: black;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.header-container2 .header .appbar-nav .section-option:hover {
+  -webkit-transition: 0.1s;
+  -moz-transition: 0.1s;
+  -o-transition: 0.1s;
+  -ms-transition: 0.1s;
+  transition: 0.1s;
+  font-weight: 600;
+}
+.header-container2 .header .section-active {
+  border-color: black !important;
+}
+.header-container2 .header .subsection-active a {
+  font-weight: 600 !important;
+}
 .top-bar {
   position: relative;
   margin: 0 auto;
@@ -364,7 +416,7 @@ input {
 }
 .cta-container-bottom .bottom-right .change-language .button-transparent {
   padding: 0;
-  width: 83px;
+  width: 90px;
   height: 31px;
 }
 .cta-container-bottom .bottom-right .change-language h5 {
@@ -375,6 +427,7 @@ input {
 .cta-container-bottom .bottom-right .change-language span {
   display: inline-block;
   padding: 0px 8px;
+  vertical-align: middle;
 }
 .cta-container-bottom .bottom-right .change-language span img {
   padding: 0 0 2px 0;
@@ -434,8 +487,9 @@ input {
 .sales-panelgrid,
 .news-panelgrid,
 .help_center-panelgrid {
-     height: 560px;
+    height: 560px;
     width: 100%;
+    overflow: hidden;
 }
 .login_back-panelgrid {
   position: relative;
@@ -635,7 +689,7 @@ input {
   transition: all 1s ease, opacity 0.7s ease;
   overflow: hidden;
   width: 100%;
-  padding: 80px 0 100px 0;
+  padding: 100px 0 100px 0;
   background: url("../img/confetti.png");
   margin: 0 auto 100px;
 }
@@ -1405,6 +1459,22 @@ input {
   }
 }
 @media only screen and (max-width: 1200px) {
+  .header-container2 .header {
+    height: 87px;
+  }
+  .header-container2 .header .sign-in {
+    background-color: black;
+    margin: 5px 10px 0 0;
+  }
+  .header-container2 .header .sign-in::before {
+    background-color: black;
+  }
+  .header-container2 .header .sign-in::after {
+    background-color: black;
+  }
+  .logo-container {
+    position: relative;
+  }
   .splash {
     font-size: 76px !important;
   }

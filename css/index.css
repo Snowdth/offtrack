@@ -491,6 +491,7 @@ input {
     height: 560px;
     width: 100%;
     overflow: hidden;
+    min-height: 600px;
 }
 .login_back-panelgrid {
   position: relative;
@@ -1751,11 +1752,17 @@ input {
     position: relative;
     width: 260px;
   }
+  .help_center-panelgrid .cta-container h1 {
+    line-height: 83px;
+  }
+  .help_center-panelgrid .cta-container h1 {
+    line-height: 83px;
+  }
   .index-panelgrid .cta-container h1 {
-    line-height: 41px;
+    line-height: 42px;
   }
   .index-panelgrid .cta-container p {
-    line-height: 20px;
+    line-height: 21px;
   }
   .check_list .check {
     display: none;

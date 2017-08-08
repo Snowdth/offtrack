@@ -1461,6 +1461,10 @@ input {
   }
 }
 @media only screen and (max-width: 1200px) {
+  .index-panelgrid .cta-container .splash h1 {
+    font-size: 65px;
+    line-height: 55px;
+  }
   .header-container2 .header {
     height: 87px;
   }
@@ -1637,6 +1641,10 @@ input {
   }
 }
 @media only screen and (max-width: 979px) {
+  .index-panelgrid .cta-container .splash h1 {
+    font-size: 49px;
+    line-height: 42px;
+  }
   .login_back-panelgrid,
   .about_us-panelgrid,
   .index-panelgrid,

@@ -1686,11 +1686,11 @@ input {
   }
   .container-store {
     margin: 0 auto;
-    -webkit-transform: translateY(37%);
-    -moz-transform: translateY(37%);
-    -o-transform: translateY(37%);
-    -ms-transform: translateY(37%);
-    transform: translateY(37%);
+    -webkit-transform: translateY(26%);
+    -moz-transform: translateY(26%);
+    -o-transform: translateY(26%);
+    -ms-transform: translateY(26%);
+    transform: translateY(26%);
   }
   .worldmap {
     width: 400px !important;
@@ -1750,6 +1750,12 @@ input {
   .container-store {
     position: relative;
     width: 260px;
+  }
+  .index-panelgrid .cta-container h1 {
+    line-height: 41px;
+  }
+  .index-panelgrid .cta-container p {
+    line-height: 20px;
   }
   .check_list .check {
     display: none;

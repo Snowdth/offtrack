@@ -441,7 +441,7 @@ input {
   transform: translateY(80%);
 }
 .splash {
-  font-family: 'Dharma Gothic E';
+  font-family: 'dharma';
   font-weight: normal;
   font-size: 75px;
   color: #fff;
@@ -928,7 +928,7 @@ input {
   text-align: center;
 }
 .readmore .center h1 {
-  font-family: 'Dharma Gothic E';
+  font-family: 'dharma';
   font-weight: normal;
   font-size: 70px;
   line-height: 59px;
@@ -1164,7 +1164,7 @@ input {
   color: #505861;
 }
 .section-downloads h3 {
-  font-family: 'Dharma Gothic E';
+  font-family: 'dharma';
   font-size: 50px;
 }
 .section-news {

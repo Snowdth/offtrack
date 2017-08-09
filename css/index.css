@@ -209,8 +209,8 @@ input {
 }
 .appbar-nav-menu li {
   padding: 3px 0;
-  min-width: 76px;
-  margin-left: 30px;
+  min-width: auto;
+  margin-left: 45px;
 }
 .appbar-nav-menu li a {
   border-bottom: 2px solid;
@@ -1257,7 +1257,7 @@ input {
 .tabs nav li {
   border-bottom: 1px solid #e7e7e7;
   padding: 20px 20px;
-  text-align: initial;
+  text-align: left;
   width: 100%;
   cursor: pointer;
 }
@@ -1270,7 +1270,7 @@ input {
   font-weight: 600;
 }
 .tabs .container {
-  text-align: initial;
+  text-align: left;
   vertical-align: top;
   display: inline-block;
   min-width: auto;
@@ -1504,7 +1504,10 @@ input {
     width: 478px;
   }
 }
-@media only screen and (max-width: 1250px) {
+@media only screen and (max-width: 1340px) {
+  .tabs nav li {
+    text-align: center;
+  }
   .index-panelgrid .cta-container .splash h1 {
     font-size: 65px;
     line-height: 55px;

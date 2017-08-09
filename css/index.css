@@ -97,6 +97,7 @@ input {
 }
 .dropdown-menu .section-option {
   font-size: 14px;
+  font-weight: normal;
 }
 .header-container{
   z-index: 999;
@@ -214,7 +215,8 @@ input {
 .appbar-nav-menu li a {
   border-bottom: 2px solid;
   border-color: transparent;
-  font-size: 16px;
+  font-size: 17px;
+  font-weight: bold;
   color: #fff;
   display: inline-block;
   height: 23px;
@@ -312,7 +314,10 @@ input {
   border-radius: 3px;
   background-color: #3c75d8;
 }
-.subsection-active {
+.subsection span {
+  font-weight: normal;
+}
+.subsection-active .section-option{
   font-weight: 600;
 }
 .subsection-active .subsection {
@@ -1468,7 +1473,7 @@ input {
     width: auto;
   }
 }
-@media only screen and (max-width: 1200px) {
+@media only screen and (max-width: 1250px) {
   .index-panelgrid .cta-container .splash h1 {
     font-size: 65px;
     line-height: 55px;

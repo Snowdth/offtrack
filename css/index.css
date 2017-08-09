@@ -98,10 +98,14 @@ input {
 .dropdown-menu .section-option {
   font-size: 14px;
 }
-.header {
+.header-container{
   z-index: 999;
   width: 100%;
   position: fixed;
+}
+.header {
+  z-index: 999;
+  width: 100%;
   padding: 38px 40px 20px;
 }
 .header-container2{

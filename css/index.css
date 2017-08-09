@@ -120,6 +120,8 @@ input {
 .header-container2 .header .appbar-nav ul li  a {
   color: black;
   font-size: 17px;
+  position: relative;
+  z-index: 999;
 }
 .header-container2 .header .logo-container .logo img {
   margin-top: 5px}

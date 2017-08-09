@@ -1753,6 +1753,9 @@ input {
   .tabs .container {
     padding: 0 10px;
   }
+  .splash h1 {
+    font-size: 84px;
+  }
 }
 @media only screen and (max-width: 732px) {
   .check {
@@ -1802,7 +1805,7 @@ input {
   .sales-panelgrid h1,
   .news-panelgrid h1,
   .help_center-panelgrid h1 {
-    font-size: 90px !important;
+    font-size: 66px !important;
   }
 }
 @media only screen and (max-width: 570px) {

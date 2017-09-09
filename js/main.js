@@ -80,16 +80,7 @@ $(document).ready(function(){
     });
   
 
-  $(window).scroll(function(){
-    if( $(this).scrollTop() > 0 ){
-      $('.header-container').addClass('header-container2');
-      $('header .logo-container .logo img').attr('src', 'img/logo2.png');
-      $('header .logo-container .logo img').attr('width', '190');
-    } else {
-      $('.header-container').removeClass('header-container2');
-      $('header .logo-container .logo img').attr('src', 'img/logo.png');
-    }
-  });
+
 
     /*$(window).resize(function() {
       if($(window).width() < 1200){

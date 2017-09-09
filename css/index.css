@@ -114,6 +114,7 @@ input {
   width: 100%;
 }
 .header-container2 .header {
+  position: fixed;
   box-shadow: 0 0 10px rgba(0,0,0,0.2);
   top: 0;
   background-color: white;
@@ -208,9 +209,8 @@ input {
   justify-content: center;
 }
 .appbar-nav-menu li {
-  padding: 3px 0;
+  padding: 3px 0 3px 26px;
   min-width: auto;
-  margin-left: 45px;
 }
 .appbar-nav-menu li a {
   border-bottom: 2px solid;
@@ -299,11 +299,14 @@ input {
 .dropdown-menu-industries {
   min-width: 222px;
 }
+.dropdown-menu-news{
+  min-width: 140px;
+}
 .subsection {
   display: none;
   position: absolute;
   top: 50%;
-  left: -10%;
+  left: 4%;
   height: 6px;
   width: 6px;
   -webkit-transform: translateY(-88%);
@@ -430,7 +433,7 @@ input {
 }
 .cta-container-bottom .bottom-right .change-language .button-transparent {
   padding: 0;
-  width: 90px;
+  width: 64px;
   height: 31px;
 }
 .cta-container-bottom .bottom-right .change-language h5 {
@@ -440,7 +443,7 @@ input {
 }
 .cta-container-bottom .bottom-right .change-language span {
   display: inline-block;
-  padding: 0px 8px;
+  padding: 0px 0 0 8px;
   vertical-align: middle;
 }
 .cta-container-bottom .bottom-right .change-language span img {
@@ -1190,6 +1193,14 @@ input {
 .section-news .section-news-card {
   text-align: center;
 }
+.section-news .section-news-card .success-card {
+  vertical-align: top;
+  margin: 15px;
+  border-radius: 13px;
+  display: inline-block;
+  padding: 0 22px 20px;
+  text-align: center;
+}
 .section-news .section-news-card .news-card {
   width: 408px;
   vertical-align: top;
@@ -1505,6 +1516,9 @@ input {
   }
 }
 @media only screen and (max-width: 1340px) {
+  .appbar-nav-menu li a{
+    font-size: 14px;
+  }
   .tabs nav li {
     text-align: center;
   }
@@ -1514,19 +1528,6 @@ input {
   }
   .header-container2 .header {
     height: 87px;
-  }
-  .header-container2 .header .sign-in {
-    background-color: black;
-    margin: 5px 10px 0 0;
-  }
-  .header-container2 .header .sign-in::before {
-    background-color: black;
-  }
-  .header-container2 .header .sign-in::after {
-    background-color: black;
-  }
-  .logo-container {
-    position: relative;
   }
   .splash {
     font-size: 76px !important;
@@ -1540,107 +1541,13 @@ input {
   .menu-container {
     display: inline-block;
   }
-  .menujq ul {
-    position: relative;
-    aria-expanded: false;
-    list-style: none;
-    z-index: 95;
-    width: 100%;
-    margin: 0 auto;
-    padding: 0;
-    font-size: 13px;
-  }
-  .menujq {
-    display: none;
-  }
-  .menujq a {
-    display: block;
-    padding: 10px;
-    background: rgba(13,13,13,0.8);
-    color: #fff;
-    text-decoration: none;
-    font-size: 16px;
-    line-height: 16px;
-  }
-  .menujq ul li a:before {
-    content: "\25CF\00A0 ";
-    width: 28px;
-    display: inline-block;
-    vertical-align: top;
-  }
-  .menujq ul li.desplegable > a:before,
-  .menujq ul li ul li.desplegable > a:before {
-    content: "\25BA\00A0";
-  }
-  .menujq ul li.desplegable.active > a:before,
-  .menujq ul li ul li.desplegable.active > a:before {
-    content: "\25BC\00A0 ";
-  }
-  .menujq ul ul,
-  .menujq ul ul ul {
-    display: none;
-    width: 100%;
-  }
-  .menujq ul ul a {
-    padding-left: 20px;
-    background: rgba(45,45,45,0.9);
-    text-transform: capitalize;
-  }
-  .menujq ul ul ul a {
-    padding-left: 40px;
-    background: #ed9c54;
-    text-transform: capitalize;
-  }
   .index-panelgrid .splash {
     font-size: 47px !important;
   }
   .index-panelgrid .splash p {
     font-size: 18px;
   }
-  .sign-in {
-    cursor: pointer;
-    right: 0;
-    top: 12px;
-    font-size: 5px;
-    margin: 0 10px 0 0;
-    position: absolute;
-    min-width: 30px;
-    height: 4px;
-    background-color: #fff;
-    border-radius: 100px;
-  }
-  .sign-in .hamburger {
-    width: 40px;
-    height: 40px;
-    position: absolute;
-    margin: -18px 5px 0 -5px;
-  }
-  .sign-in .button-transparent {
-    display: none;
-  }
-  .sign-in .button-blue {
-    display: none;
-  }
-  .sign-in::before {
-    content: '';
-    width: 100%;
-    bottom: 200%;
-    display: block;
-    position: absolute;
-    height: 4px;
-    background-color: #fff;
-    border-radius: 100px;
-  }
-  .sign-in::after {
-    content: '';
-    width: 100%;
-    top: 200%;
-    display: block;
-    position: absolute;
-    height: 4px;
-    background-color: #fff;
-    border-radius: 100px;
-  }
+
   .section-inner-columnleft,
   .section-inner-columnright {
     display: inherit !important;
@@ -1658,9 +1565,6 @@ input {
   .case_study .content .center {
     text-align: center;
     width: inherit;
-  }
-  .appbar-nav {
-    display: none;
   }
   .tabs .container {
     display: block;
@@ -1681,6 +1585,14 @@ input {
   }
   .tabs .container.no-visible {
     display: none !important;
+  }
+}
+@media only screen and (max-width: 1160px) {
+  .appbar-nav-menu li {
+    padding: 3px 0 3px 20px;
+  }
+  .header-container2 .header .appbar-nav ul li  a {
+    font-size: 15px;
   }
 }
 @media only screen and (max-width: 1040px) {
@@ -1800,6 +1712,119 @@ input {
   }
   .splash h1 {
     font-size: 84px;
+  }
+}
+@media only screen and (max-width: 1090px) {
+  .header-container2 .header .sign-in {
+    background-color: black;
+    margin: 5px 10px 0 0;
+  }
+  .header-container2 .header .sign-in::before {
+    background-color: black;
+  }
+  .header-container2 .header .sign-in::after {
+    background-color: black;
+  }
+  .logo-container {
+    position: relative;
+  }
+  .appbar-nav {
+    display: none;
+  }
+  .menujq ul {
+    position: relative;
+    aria-expanded: false;
+    list-style: none;
+    z-index: 95;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0;
+    font-size: 13px;
+  }
+  .menujq {
+    display: none;
+  }
+  .menujq a {
+    display: block;
+    padding: 10px;
+    background: rgba(13,13,13,0.8);
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+    line-height: 16px;
+  }
+  .menujq ul li a:before {
+    content: "\25CF\00A0 ";
+    width: 28px;
+    display: inline-block;
+    vertical-align: top;
+  }
+  .menujq ul li.desplegable > a:before,
+  .menujq ul li ul li.desplegable > a:before {
+    content: "\25BA\00A0";
+  }
+  .menujq ul li.desplegable.active > a:before,
+  .menujq ul li ul li.desplegable.active > a:before {
+    content: "\25BC\00A0 ";
+  }
+  .menujq ul ul,
+  .menujq ul ul ul {
+    display: none;
+    width: 100%;
+  }
+  .menujq ul ul a {
+    padding-left: 20px;
+    background: rgba(45,45,45,0.9);
+    text-transform: capitalize;
+  }
+  .menujq ul ul ul a {
+    padding-left: 40px;
+    background: #ed9c54;
+    text-transform: capitalize;
+  }
+  .sign-in {
+    cursor: pointer;
+    right: 0;
+    top: 12px;
+    font-size: 5px;
+    margin: 0 10px 0 0;
+    position: absolute;
+    min-width: 30px;
+    height: 4px;
+    background-color: #fff;
+    border-radius: 100px;
+  }
+  .sign-in .hamburger {
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    margin: -18px 5px 0 -5px;
+  }
+  .sign-in .button-transparent {
+    display: none;
+  }
+  .sign-in .button-blue {
+    display: none;
+  }
+  .sign-in::before {
+    content: '';
+    width: 100%;
+    bottom: 200%;
+    display: block;
+    position: absolute;
+    height: 4px;
+    background-color: #fff;
+    border-radius: 100px;
+  }
+  .sign-in::after {
+    content: '';
+    width: 100%;
+    top: 200%;
+    display: block;
+    position: absolute;
+    height: 4px;
+    background-color: #fff;
+    border-radius: 100px;
   }
 }
 @media only screen and (max-width: 732px) {

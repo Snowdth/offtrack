@@ -112,9 +112,10 @@ input {
 .header-container2{
   z-index: 999;
   width: 100%;
+  position: fixed;
 }
 .header-container2 .header {
-  position: fixed;
+  position: relative;
   box-shadow: 0 0 10px rgba(0,0,0,0.2);
   top: 0;
   background-color: white;

@@ -1056,13 +1056,55 @@ input {
 .section-tutorial .video {
   padding: 0 0 120px;
 }
-.section-tutorial-worldusers .worldmap {
+.section-tutorial-services {
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+}
+.section-tutorial-services .services {
+  float: left;
+  width: 25%;
+}
+.section-tutorial-services .services img{
+  width: 100%;
+  height: auto;
+  vertical-align: middle;
+}
+.section-tutorial-services .services .services-img{
+  position: relative;
+}
+.section-tutorial-services .services .text{
+  position: absolute;
+  width: 100%;
+  top: 50%;
+  left: 50%;
+  color: white;
+  text-align: center;
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%)
+}
+.section-tutorial-services .services .text p{
+  font-size: 17px;
+}
+.section-tutorial-services .services .text strong{
+  font-size: 23px;
+  display: block;
+  padding: 10px 0 20px
+}
+.section-tutorial-services .services .text .button-blue{
+  width: 139px;
+  font-size: 14px;
+}
+/*.section-tutorial-worldusers .worldmap {
   position: relative;
   height: 436px;
   width: 826px;
   margin: 0 auto;
-}
-.section-tutorial-worldusers .worldmap h4 {
+}*/
+/*.section-tutorial-worldusers .worldmap h4 {
   font-size: 25px;
   margin: 0 auto;
   padding: 15px 0 0;
@@ -1079,7 +1121,7 @@ input {
 .section-tutorial-worldusers .worldmap .worldmap-content .text {
   width: 450px;
   margin: 0 auto;
-}
+}*/
 .tutorial-card {
   vertical-align: top;
   width: 300px;
@@ -1674,7 +1716,7 @@ input {
     -ms-transform: translateY(26%);
     transform: translateY(26%);
   }
-  .worldmap {
+/*  .worldmap {
     width: 400px !important;
   }
   .worldmap .wallpaper img {
@@ -1689,7 +1731,7 @@ input {
   }
   .worldmap-content .text {
     width: inherit !important;
-  }
+  }*/
   .section-justify {
     text-align: justify !important;
   }
@@ -1718,6 +1760,13 @@ input {
   }
 }
 @media only screen and (max-width: 1090px) {
+  .section-tutorial-services .services .text strong {
+    font-size: 17px;
+  }
+  .section-tutorial-services .services .text .button-blue {
+    font-size: 12px;
+    width: 100px;
+  }
   .header-container2 .header .sign-in {
     background-color: black;
     margin: 5px 10px 0 0;
@@ -1831,6 +1880,16 @@ input {
   }
 }
 @media only screen and (max-width: 732px) {
+  .section-tutorial-services .services {
+    width: 100%;
+  }
+    .section-tutorial-services .services .text strong {
+    font-size: 23px;
+  }
+  .section-tutorial-services .services .text .button-blue {
+    font-size: 14px;
+    width: 139px;
+  }
   .check {
     display: none !important;
   }
@@ -1953,10 +2012,10 @@ input {
   .change-language {
     padding: 0 0 0 20px !important;
   }
-  .worldmap {
-    width: inherit !important;
-    margin: 0 20px !important;
-  }
+/*.worldmap {
+width: inherit !important;
+margin: 0 20px !important;
+}*/
   .logo img {
     width: 127px;
   }

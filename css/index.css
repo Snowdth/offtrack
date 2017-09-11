@@ -708,9 +708,9 @@ input {
   transition: all 1s ease, opacity 0.7s ease;
   overflow: hidden;
   width: 100%;
-  padding: 100px 0 100px 0;
+  padding: 50px 0 100px 0;
   background-color: white;
-  margin: 0 auto 100px;
+  margin: 0 auto 50px;
 }
 .info .section-justify {
   max-width: 1100px;
@@ -1054,7 +1054,7 @@ input {
   padding: 30px 0;
 }
 .section-tutorial .video {
-  padding: 0 0 120px;
+  padding: 0;
 }
 .section-tutorial-services {
   width: 100%;
@@ -1285,7 +1285,7 @@ input {
   filter: alpha(opacity=80);
 }
 .tabs {
-  padding: 90px 0;
+  padding: 45px 0 90px;
   position: relative;
   margin: 0 auto;
   text-align: center;
@@ -1564,9 +1564,6 @@ input {
   .appbar-nav-menu li a{
     font-size: 14px;
   }
-  .tabs nav li {
-    text-align: center;
-  }
   .index-panelgrid .cta-container .splash h1 {
     font-size: 65px;
     line-height: 55px;
@@ -1582,9 +1579,6 @@ input {
   }
   .cta-container {
     width: 1050px;
-  }
-  .menu-container {
-    display: inline-block;
   }
   .index-panelgrid .splash {
     font-size: 47px !important;
@@ -1611,7 +1605,13 @@ input {
     text-align: center;
     width: inherit;
   }
-  .tabs .container {
+  .tabs .content {
+    max-width: 600px;
+  }
+  .tabs nav {
+    width: 335px;
+  }
+/*  .tabs .container {
     display: block;
     min-width: 100%;
     padding: 0 30px;
@@ -1630,7 +1630,7 @@ input {
   }
   .tabs .container.no-visible {
     display: none !important;
-  }
+  }*/
 }
 @media only screen and (max-width: 1160px) {
   .appbar-nav-menu li {
@@ -1732,6 +1732,7 @@ input {
   .worldmap-content .text {
     width: inherit !important;
   }*/
+
   .section-justify {
     text-align: justify !important;
   }
@@ -1877,6 +1878,32 @@ input {
     height: 4px;
     background-color: #fff;
     border-radius: 100px;
+  }
+  .tabs .container {
+    display: block;
+    min-width: 100%;
+    padding: 0 30px;
+  }
+  .tabs .content {
+    padding: 20px 20px 50px !important;
+    min-width: 100% !important;
+    max-width: 100%;
+    margin: 0;
+  }
+  .tabs .menu-container-inner {
+    display: none !important;
+  }
+  .tabs .menu-container-inner.visible {
+    display: inline-block !important;
+  }
+  .tabs .container.no-visible {
+    display: none !important;
+  }
+  .menu-container {
+    display: inline-block;
+  }
+  .tabs nav li {
+    text-align: center;
   }
 }
 @media only screen and (max-width: 732px) {

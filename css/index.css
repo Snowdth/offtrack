@@ -390,6 +390,23 @@ input {
   border-color: #3c75d8;
   background-color: #3c75d8;
 }
+.login_back-panelgrid .cta-container,
+.about_us-panelgrid .cta-container,
+.index-panelgrid .cta-container,
+.attendance-panelgrid .cta-container,
+.cellular_form-panelgrid .cta-container,
+.tasks-panelgrid .cta-container,
+.contact_us-panelgrid .cta-container,
+.location-panelgrid .cta-container,
+.routing_optimization-panelgrid .cta-container,
+.logistic_distribution-panelgrid .cta-container,
+.service_maintenance-panelgrid .cta-container,
+.security-panelgrid .cta-container,
+.sales-panelgrid .cta-container,
+.news-panelgrid .cta-container,
+.help_center-panelgrid .cta-container {
+  top: 64%;
+}
 .cta-container {
   text-align: center;
   position: absolute;
@@ -505,10 +522,10 @@ input {
 .sales-panelgrid,
 .news-panelgrid,
 .help_center-panelgrid {
-    height: 560px;
-    width: 100%;
-    overflow: hidden;
-    min-height: 600px;
+  height: 560px;
+  width: 100%;
+  overflow: hidden;
+  min-height: 600px;
 }
 .login_back-panelgrid {
   position: relative;
@@ -522,7 +539,7 @@ input {
 .about_us-panelgrid {
   position: relative;
   background: url("../img/slide02.jpg") 0% 0%/cover no-repeat;
-  background-position: center;
+  background-position: center 76px;
 }
 .index-panelgrid {
   position: relative;
@@ -534,62 +551,62 @@ input {
 .attendance-panelgrid {
   position: relative;
   background: url("../img/slide04.jpg") 0% 0%/cover no-repeat;
-  background-position: center;
+  background-position: center 76px;
 }
 .cellular_form-panelgrid {
   position: relative;
   background: url("../img/slide03.jpg") 0% 0%/cover no-repeat;
-  background-position: center;
+  background-position: center 76px;
 }
 .tasks-panelgrid {
   position: relative;
   background: url("../img/tasks.jpg") 0% 0%/cover no-repeat;
-  background-position: center;
+  background-position: center 76px;
 }
 .contact_us-panelgrid {
   position: relative;
   background: url("../img/contact_us.jpg") 0% 0%/cover no-repeat;
-  background-position: center;
+  background-position: center 76px;
 }
 .location-panelgrid {
   position: relative;
   background: url("../img/location.jpg") 0% 0%/cover no-repeat;
-  background-position: center;
+  background-position: center 76px;
 }
 .routing_optimization-panelgrid {
   position: relative;
   background: url("../img/optimization.jpg") 0% 0%/cover no-repeat;
-  background-position: center;
+  background-position: center 76px;
 }
 .logistic_distribution-panelgrid {
   position: relative;
   background: url("../img/logitic.jpg") 0% 0%/cover no-repeat;
-  background-position: center;
+  background-position: center 76px;
 }
 .service_maintenance-panelgrid {
   position: relative;
   background: url("../img/service_maintenance.jpg") 0% 0%/cover no-repeat;
-  background-position: center;
+  background-position: center 76px;
 }
 .security-panelgrid {
   position: relative;
   background: url("../img/security.jpg") 0% 0%/cover no-repeat;
-  background-position: center;
+  background-position: center 76px;
 }
 .sales-panelgrid {
   position: relative;
   background: url("../img/sales.jpg") 0% 0%/cover no-repeat;
-  background-position: center;
+  background-position: center 76px;
 }
 .news-panelgrid {
   position: relative;
   background: url("../img/news.jpg") 0% 0%/cover no-repeat;
-  background-position: center;
+  background-position: center 76px;
 }
 .help_center-panelgrid {
   position: relative;
   background: url("../img/help_center.jpg") 0% 0%/cover no-repeat;
-  background-position: center;
+  background-position: center 76px;
 }
 .section-inner-login {
   vertical-align: middle;
@@ -954,7 +971,7 @@ input {
   line-height: 59px;
 }
 .readmore .center .button-blue {
-  width: 146px;
+  width: 207px;
   margin: 50px;
 }
 .case_study {

@@ -805,6 +805,9 @@ input {
   line-height: 200%;
   text-align: center;
 }
+.columns {
+  overflow: hidden;
+}
 .info .section-tasks .section-inner-columnleft {
   vertical-align: top;
   width: 473px;
@@ -816,7 +819,7 @@ input {
   font-weight: normal;
 }
 .info .section-tasks .section-inner-columnright {
-  padding: 0 0 0 40px;
+  padding: 0 40px 0 40px;
   vertical-align: top;
   width: 676px;
   display: inline-block;
@@ -1032,6 +1035,7 @@ input {
   font-size: 13px;
   line-height: 21px;
   color: #e1e5ea;
+  text-align: initial;
 }
 .footer .container {
   text-align: center;
@@ -1047,9 +1051,11 @@ input {
   display: inline-block;
   width: 198px;
 }
-.colofon {
-  max-width: 1350px;
-  margin: 0 auto;
+.colofon p {
+/*  max-width: 1350px;
+  margin: 0 auto;*/
+  padding: 0 20px;
+  text-align: center;
 }
 .section-tutorial {
   max-width: 1000px;
@@ -1536,6 +1542,9 @@ input {
   }
 }
 @media only screen and (max-width: 1280px) {
+  .columns {
+    padding: 0px 20px !important;
+  }
   .index-panelgrid .splash p {
     width: auto;
   }
@@ -1576,7 +1585,31 @@ input {
     width: 478px;
   }
 }
+@media only screen and (max-width: 1401px) {
+  .footer .container .telefons {
+    width: 155px;
+  }
+  .footer .container .telefons {
+    margin: 0 21px;
+  }
+}
 @media only screen and (max-width: 1340px) {
+  .info .section-tasks .section-inner-columnleft h2 {
+    text-align: center;
+    margin-bottom: 40px
+  }
+  .info .section-tasks .section-inner-columnleft .mini-blue {
+    display: none;
+  }
+  .columns {
+    padding: 0px 55px;
+  }
+  .column {
+    width: auto;
+  }
+  .column p {
+    width: 409px;
+  }
   .appbar-nav-menu li a{
     font-size: 14px;
   }
@@ -1608,11 +1641,6 @@ input {
     display: inherit !important;
     margin: 0 auto;
     width: inherit !important;
-  }
-  .column {
-    text-align: justify;
-    float: none;
-    margin: 0 auto;
   }
   .case_study .content {
     width: inherit;
@@ -1648,7 +1676,18 @@ input {
     display: none !important;
   }*/
 }
+@media only screen and (max-width: 1203px) {
+  .footer .container .telefons {
+    margin: 0 16px;
+  }
+}
 @media only screen and (max-width: 1160px) {
+  .footer .container .telefons {
+    margin: 0 16px;
+  }
+  .footer .container .telefons {
+    width: 198px;
+  }
   .appbar-nav-menu li {
     padding: 3px 0 3px 20px;
   }
@@ -1777,6 +1816,22 @@ input {
   }
 }
 @media only screen and (max-width: 1090px) {
+  .columns .column {
+    width: 548px;
+  }
+  .columns {
+    padding: 0;
+  }
+  .column p {
+    width: auto;
+    display: initial;
+  }
+  .column {
+    text-align: justify;
+    float: none;
+    margin: 0 auto;
+    width: auto;
+  }
   .section-tutorial-services .services .text strong {
     font-size: 17px;
   }
@@ -1923,6 +1978,9 @@ input {
   }
 }
 @media only screen and (max-width: 732px) {
+  .columns .column {
+    width: auto;
+  }
   .section-tutorial-services .services {
     width: 100%;
   }
@@ -1933,9 +1991,9 @@ input {
     font-size: 14px;
     width: 139px;
   }
-  .check {
+/*  .check {
     display: none !important;
-  }
+  }*/
   .section-solution .text h4 {
     text-align: center;
   }
@@ -1984,6 +2042,9 @@ input {
   }
 }
 @media only screen and (max-width: 570px) {
+  .footer p {
+    text-align: center;
+  }
   .index-panelgrid .splash h1 {
     font-size: 47px !important;
   }

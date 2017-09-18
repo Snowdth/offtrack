@@ -1429,6 +1429,54 @@ input {
   font-weight: 600;
   color: #fff;
 }
+#MainFrame {
+  margin-top: 0px;
+  margin-left: 0px;
+  border: 5px solid #e8e3e9;
+  -webkit-box-shadow: 0 1px 10px #000;
+  -moz-box-shadow: 0 1px 10px #000;
+  box-shadow: 0 1px 10px #000;
+  float: left;
+  background: #fff;
+  border-radius: 9px;
+  padding: 20px 0;
+}
+#MainFrame #RAD_SPLITTER_PANE_CONTENT_pnData {
+  width: 100%;
+}
+#cont_demo {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,15%);
+  -webkit-transform: translate(-50%,15%);
+  -moz-transform: translate(-50%,15%);
+  -o-transform: translate(-50%,15%);
+  -ms-transform: translate(-50%,15%);
+  text-align: center;
+  /* width: auto; */
+  /* background: #fff; */
+}
+#close_demo {
+  width: 31px;
+  height: 31px;
+/*  margin-right: 10px;
+  margin-left: -10px;*/
+  background-color: #333;
+  border: 3px solid #fff;
+  border-radius: 20px;
+  color: #fff;
+  cursor: pointer;
+  position: absolute;
+  right: 0;
+  top: 0;
+  -webkit-box-shadow: 0 1px 10px #000;
+  -moz-box-shadow: 0 1px 10px #000;
+  box-shadow: 0 1px 10px #000;
+  font-size: 18px;
+  font-weight: 400;
+  padding: auto;
+}
 .login_back-panelgrid .splash,
 .about_us-panelgrid .splash,
 .attendance-panelgrid .splash,

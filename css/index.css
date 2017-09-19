@@ -1439,7 +1439,7 @@ input {
   float: left;
   background: #fff;
   border-radius: 9px;
-  padding: 20px 15px;
+  padding: 20px 0 0;
 }
 #cont_demo {
   position: absolute;
@@ -2089,6 +2089,7 @@ input {
 @media only screen and (max-width: 570px) {
   #cont_demo {
     width: 100%;
+    padding: 0 10px;
   }
   #cont_demo iframe {
     width: 100%;

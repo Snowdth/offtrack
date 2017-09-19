@@ -2087,6 +2087,13 @@ input {
   }
 }
 @media only screen and (max-width: 570px) {
+  #cont_demo {
+    width: 100%;
+  }
+  #cont_demo iframe {
+    width: 100%;
+  }
+
   .footer p {
     text-align: center;
   }

@@ -28,7 +28,7 @@
 								<li><a href="about_us.html" class="appbar-nav-section button">About us</a></li>
 								<li class="appbar-services">
 									<a class="appbar-nav-section button section-inactive">Services</a>
-									<span><img src="img/arrow.png" width="8" height="5"></span>
+									<span><img src="img/down.svg" width="8" height="5"></span>
 									<ul class="dropdown-menu dropdown-menu-servicies">
 										<li>
 											<span class="subsection"></span>
@@ -52,13 +52,13 @@
 										</li>
 										<li class="subsection-active">
 											<span class="subsection"></span>
-											<a class="section-option" href="routing_optimization.html">Routing and Optimization</a>
+											<a class="section-option" href="routing_optimization.html">Planning and Optimization</a>
 										</li>
 									</ul>
 								</li>
 								<li class="appbar-services">
 									<a class="appbar-nav-section button section-inactive">Industries</a>
-									<span><img src="img/arrow.png" width="8" height="5"></span>
+									<span><img src="img/down.svg" width="8" height="5"></span>
 									<ul class="dropdown-menu dropdown-menu-industries">
 										<li>
 											<span class="subsection"></span>
@@ -80,7 +80,7 @@
 								</li>
 								<li class="appbar-services">
 									<a class="appbar-nav-section button section-inactive">News</a>
-									<span><img src="img/arrow.png" width="8" height="5"></span>
+									<span><img src="img/down.svg" width="8" height="5"></span>
 									<ul class="dropdown-menu dropdown-menu-news">
 										<li>
 											<span class="subsection"></span>
@@ -98,12 +98,12 @@
 						</div>
 						<div class="sign-in">
 							<div class="hamburger"></div>
-							<a href="">
+							<a class="free-trial">
 								<button class="button-blue">
 									<span>Free Trial</span>
 								</button>
 							</a>
-							<a href="http://login.officetrack.com/secure/GlobalOfficeTrackLogon.aspx?ReturnUrl=%2Findex.aspx">
+							<a target="_blank" href="http://login.officetrack.com/secure/GlobalOfficeTrackLogon.aspx?ReturnUrl=%2Findex.aspx">
 								<button class="button-transparent">
 									<span>Login</span>
 								</button>
@@ -113,8 +113,8 @@
 				</header>
 				<div class="menujq">
 					<ul>
-					 <li><a href="http://login.officetrack.com/secure/GlobalOfficeTrackLogon.aspx?ReturnUrl=%2Findex.aspx">Login</a></li>
-					 <li><a href="">Free Trial</a></li>
+					 <li><a target="_blank" href="http://login.officetrack.com/secure/GlobalOfficeTrackLogon.aspx?ReturnUrl=%2Findex.aspx">Login</a></li>
+					 <li><a class="free-trial">Free Trial</a></li>
 					 <li><a href="about_us.html">About us</a></li>
 					 <li><a >Services</a>
 					   <ul>
@@ -123,7 +123,7 @@
 					   <li><a href="attendance.html">Attendance</a></li>
 					   <li><a href="location.html">Location and Geo Coding</a></li>
 					   <li><a href="">Proof of delivery</a></li>
-					   <li><a href="routing_optimization.html">Routing and Optimization</a></li>
+					   <li><a href="routing_optimization.html">Planning and Optimization</a></li>
 					  </ul>
 					 </li>
 					 <li><a >Industries</a>
@@ -144,20 +144,24 @@
 					 <li><a href="contact_us.html">Contact us</a></li>
 					</ul>
 				</div>
+				<div id="cont_demo" style="display: none;">
+					<iframe src="https://p.officecore.co.il/LBS_Externals/OfficetrackTrial/ENRegister.aspx?ProviderGuid=F029E1C5-EF17-4C7D-88D2-1318F605244C" width="540" height="600" frameborder="0" id="MainFrame" marginheight="0" marginwidth="0" scrolling="no"></iframe>
+					<div id="close_demo">x</div>
+				</div>
 			</div>
 			<div class="section-inner">
 				<div class="cta-container">
 					<div class="splash">
-						<h1>Routing and Optimization</h1>
+						<h1>Planning and Optimization</h1>
 					</div>				
 				</div>
 				<div class="cta-container-bottom">
 					<a href="#content" id="scrolling-bottom"><span class="arrow-slide"></span></a>
 					<div class="bottom-right">
 						<div class="social">
-							<a href=""><img src="img/facebook.png" width="30" height="30" hspace="5"></a>
-							<a href=""><img src="img/instagram.png" width="30" height="30" hspace="5"></a>
-							<a href=""><img src="img/twitter.png" width="30" height="30" hspace="5"></a>
+							<a href="https://www.youtube.com/watch?v=T3LhbC61p3g2"><img src="img/youtube.png" width="30" height="30" hspace="5"></a>
+							<a href="https://www.linkedin.com/company/3173837/"><img src="img/linkedin.png" width="30" height="30" hspace="5"  style="border-radius: 25px;"></a>
+							<a href=""><img src="img/twitter_1.png" width="30" height="30" hspace="5"></a>
 						</div>
 						<div class="change-language">
 							<button class="button-transparent">
@@ -182,40 +186,42 @@
 						<img src="img/shadow.png">
 					</div>
 				</div>
-				<div class="column left">
-					<div class="title_mini-blue">
-						<h3>Main Features</h3>
-						<div class="mini-blue"></div>
+				<div class="columns">
+					<div class="column left">
+						<div class="title_mini-blue">
+							<h3>Main Features</h3>
+							<div class="mini-blue"></div>
+						</div>
+						<p style="display: block;">The optimization module plans optimal utilization of resources for any given workday, based on:</p>
+						<p style="display: block;">• Geographical distances to customers locations.</p>
+						<p style="display: block;">• Time slots provided by customers.</p>
+						<p style="display: block;">• Skills of agents.</p>
+						<p style="display: block;">• Capacity of vehicles.</p>
+						<p style="display: block;">• Expected duration of customers service time.</p>
+						<p style="display: block;">• Capital and variable costs of resources.</p>
 					</div>
-					<p>The optimization module plans optimal utilization of resources for any given workday, based on:</p>
-					<p>• Geographical distances to customers locations.</p>
-					<p>• Time slots provided by customers.</p>
-					<p>• Skills of agents.</p>
-					<p>• Capacity of vehicles.</p>
-					<p>• Expected duration of customers service time.</p>
-					<p>• Capital and variable costs of resources.</p>
-				</div>
-				<div class="column right">
-					<div class="title_mini-blue">
-						<h3>Key Benefits</h3>
-						<div class="mini-blue"></div>
+					<div class="column right">
+						<div class="title_mini-blue">
+							<h3>Key Benefits</h3>
+							<div class="mini-blue"></div>
+						</div>
+						<li>
+							<i class="check"></i>
+							<p>Major savings in time, expenses and resources.</p>
+						</li>
+						<li>
+							<i class="check"></i>
+							<p>Improved field work efficiency.</p>
+						</li>
+						<li>
+							<i class="check"></i>
+							<p>Optimal utilization of resources.</p>
+						</li>
+						<li>
+							<i class="check"></i>
+							<p>Improved long term work planning.</p>
+						</li>
 					</div>
-					<li>
-						<i class="check"></i>
-						<p>Major savings in time, expenses and resources.</p>
-					</li>
-					<li>
-						<i class="check"></i>
-						<p>Improved field work efficiency.</p>
-					</li>
-					<li>
-						<i class="check"></i>
-						<p>Optimal utilization of resources.</p>
-					</li>
-					<li>
-						<i class="check"></i>
-						<p>Improved long term work planning.</p>
-					</li>
 				</div>
 			</div>
 		</section>
@@ -242,10 +248,10 @@
 				<div class="telefons">
 					<img src="img/flags/flag-arg.png" vspace="13">
 					<h5>ARGENTINA | OfficeCore</h5>
-					<p>Juan Pablo Moreno<br>
-						JPMoreno@officecore.com<br>
-						Office: +54-9-11-527-27200<br>
-						Mobile: +54 (9) 11 32277150
+					<p>Jonathan Kremer<br>
+						Jonathank@officecore.com<br>
+						Office: +54-11-527-27200<br>
+						Mobile: +54-9-11-5663-265
 					</p>
 				</div>
 				<div class="telefons">
@@ -258,10 +264,10 @@
 				<div class="telefons">
 					<img src="img/flags/flag-chile.png" width="43" height="25" vspace="13">
 					<h5>CHILE | Telrad</h5>
-					<p>Alejandra Torres<br>
-						alejandra.torres@telrad.cl<br>
+					<p>Aniluz Auikalil<br>
+						aniluz.auikalil@telrad.cl<br>
 						Office: +56 2 24957795<br>
-						Mobile: +56 9 42626065
+						Mobile: +56 9 57098692
 					</p>
 				</div>
 				<div class="telefons">
@@ -291,9 +297,9 @@
 				</div>
 				<div class="telefons">
 					<img src="img/flags/flag-peru.png" width="43" height="25" vspace="13">
-					<h5>PERU | OffiecCore</h5>
-					<p>María Rosario Gutiérrez<br>
-						MariaR@officecore.com<br>
+					<h5>PERU | OfficeCore</h5>
+					<p>Lebnitz Guevara Vásquez<br>
+						LebnitzG@officecore.com<br>
 						Office: +51 (1) 7480375<br>
 						Mobile: +51 (953) 796276
 					</p>
@@ -318,11 +324,11 @@
 				</div>
 				<div class="telefons">
 					<img src="img/flags/flag-ecuador.png" width="43" height="25" vspace="13">
-					<h5>Ecuador |</h5>
-					<p>Innova Consultores<br>
-						Monica Quijano Acosta<br>
-						mquijano@innovaconsultores.ec<br>
-						Mobile: +593 987288976
+					<h5>ECUADOR | Inpymes</h5>
+					<p>Diego Chávez<br>
+						info@inpymes.com<br>
+						Mobile: +593-0982279320<br>
+						Office: +593-02-3238082
 					</p>
 				</div>
 				<div class="telefons">

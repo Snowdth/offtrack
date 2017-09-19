@@ -1,0 +1,1409 @@
+@import 'nib'
+@import url('https://fonts.googleapis.com/css?family=PT+Sans');
+@font-face 
+	font-family 'dharma'
+	src: url('../fonts/DharmaGothicE_Regular_R.eot')
+    src: url('../fonts/DharmaGothicE_Regular_R.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/DharmaGothicE_Regular_R.woff') format('woff'),
+         url('../fonts/DharmaGothicE_Regular_R.ttf') format('truetype'),
+         url('../fonts/DharmaGothicE_Regular_R.svg#DharmaGothicE_Regular_R') format('svg')
+    font-weight: normal
+    font-style: normal
+html
+	margin 0
+	height 100%
+	width 100%
+body
+	margin 0
+	height 100%
+	width 100%
+	background white
+	font-family 'PT Sans'
+	font-style normal
+	-webkit-font-smoothing antialiased
+html
+	margin 0
+	height 100%
+	width 100%
+li
+	list-style none
+ul
+	padding 0
+a
+	cursor pointer
+	text-decoration none
+*
+*:before
+*:after
+	box-sizing border-box
+article
+aside
+details
+figcaption
+figure
+footer
+header
+hgroup
+menu
+nav
+section
+	display block;
+h2
+h1
+p
+h4
+h5
+	margin 0
+h5
+	font-size 13px
+	line-height 22px
+	color #e1e5ea
+h2
+	color #505861
+	font-size 35px
+h3
+	color #505861
+	font-size 30px
+h4
+	color #505861
+	font-size 19px
+input
+	outline 0px	
+::-webkit-scrollbar
+	background #f4f4f4
+	width 8px
+	height 8px
+::-webkit-scrollbar-thumb
+	background #222
+	width 8px
+.dropdown-menu
+	.section-option
+		font-size 14px
+.header
+	padding 38px 40px 20px
+.top-bar
+	position relative
+	margin 0 auto
+	width 100%
+	color white
+	display flex
+.logo-container
+	margin-left 15px
+	min-width 195px
+	position absolute
+	left 0
+.logo
+	cursor pointer
+	height 45px
+	width 190px
+	display block
+.appbar-nav
+	position relative
+	width auto
+	margin 0 auto
+.appbar-nav-menu
+	height 50px
+	font-size 16px
+	display flex
+	justify-content center
+	li
+		padding 3px 0
+		min-width 76px
+		margin-left 30px
+		a
+			border-bottom 2px solid
+			border-color transparent
+			font-size 16px
+			color white
+			display inline-block
+			height 23px
+		img
+			margin 0 0 2px 7px
+.appbar-nav-section:hover
+	transition 0.15s
+	border-color white
+	box-sizing border-box
+.section-option:hover
+	transition 0.1s
+	font-weight 600
+.appbar-services
+	display inherit
+	border-color transparent !important
+	padding 0 0 15px 0
+	position relative
+.appbar-industries
+	display inherit
+	border-color transparent !important
+	padding 0 0 15px 0
+	position relative
+.appbar-services:hover
+	.dropdown-menu
+		display block
+	.dropdown-menu-industries
+		display block
+.appbar-services:hover
+	.dropdown-menu
+		display block
+	.dropdown-menu-servicies
+		display block
+.dropdown-menu
+	display none
+	min-width 172px
+	right -10%
+	margin-top -4px
+	z-index 101
+	margin-bottom 20px
+	background-color rgba(0, 0, 0,0.6)
+	backdrop-filter: blur(10px);
+	//background-color: rgba(0, 0, 0, 0.6);
+	padding 10px 0
+	border-radius 3px
+	position absolute
+	top 80%
+	//rgba(190, 190, 193,0.6)   rgba(50,50,50,0.4)
+	li
+		position relative
+	&::after
+		content ""
+		border 8px solid transparent
+		border-bottom 8px solid rgba(0, 0, 0,0.6)
+		position absolute
+		top -16px
+		right 21px
+		left auto
+.dropdown-menu-servicies
+	min-width 210px
+.dropdown-menu-industries
+	min-width 222px
+.subsection
+	display none
+	position absolute
+	top 50%
+	left -10%
+	height 6px
+	width 6px
+	transform translateY(-88%)
+	border-radius 3px
+	background-color #3c75d8
+.subsection-active
+	font-weight 600
+	.subsection
+		display block !important
+.section-active
+	border-bottom 2px solid !important
+	border-color white !important
+	box-sizing border-box
+.section-inactive
+	border-bottom 0 !important
+	border-color white !important
+.sign-in
+	min-width 229px
+	right 0
+	position absolute
+	padding	5px 0 0
+	color white
+	.button-blue
+		background #4482EF
+		border-color #4482EF
+		border 2px solid #4482EF
+		margin-left 12px
+		font-size 14px
+	.button-transparent
+		font-size 14px
+		height 38px
+.button-transparent
+	cursor pointer
+	outline 0px
+	background rgba(50, 50, 50, 0.3)
+	width 102px
+	border-radius 4px
+	padding 9px 12px
+	border-color #DADADA
+	border 1px solid rgba(255,255,255,0.7)
+	font-weight 600
+	color white
+.button-transparent:hover
+	border-color rgba(255,255,255,0.8)
+	background-color rgba(50,50,50,0.6)
+.button-blue
+	font-size 16px
+	cursor pointer
+	outline 0px
+	background #5892F8
+	width 102px
+	border-radius 4px
+	padding 9px 12px
+	border-color #5892F8
+	border 2px solid #5892F8
+	font-weight 600
+	color white
+.button-blue:hover
+	color #fff
+	border-color #3C75D8
+	background-color #3C75D8
+.cta-container
+	text-align center
+	position absolute
+	width 1500px
+	top 50%
+	left 50%
+	transform translate(-50%, -50%)
+.cta-container-bottom
+	.arrow-slide
+		cursor pointer
+		background-image url('../img/arrow.png')  
+		width 43px
+		height 24px
+		display block
+		position absolute
+		bottom 0
+		left 50%
+		transform translate(-50%, -50%)
+	.bottom-right
+		position absolute
+		padding 0 20px
+		bottom 4%
+		right 0
+		.social
+			display inline-block
+			vertical-align middle
+		.change-language
+			padding 0 20px
+			display inline-block
+			vertical-align middle
+			.button-transparent
+				padding 0
+				width 83px
+				height 31px
+			h5
+				display inline-block
+				color white
+				font-size 14px
+			span
+				display inline-block
+				padding 0px 8px
+				img
+					padding 0 0 2px 0
+.container-store
+	transform translateY(80%)
+.splash
+	font-family Dharma Gothic E
+	font-weight normal
+	font-size 75px
+	color white
+	line-height: 53px
+	h1
+		font-weight normal
+		line-height: 89px
+		margin-bottom: 9px
+	.button-blue
+		margin-top 30px
+		width 255px
+		height 55px
+		font-size 16px
+	p
+		font-family 'PT Sans'
+		font-size 32px
+		width 1100px
+		font-size 40px
+		margin 0 auto
+.wrapper
+	height 100%
+	width 100%
+.login_back-panelgrid
+.about_us-panelgrid
+.index-panelgrid
+.attendance-panelgrid
+.cellular_form-panelgrid
+.tasks-panelgrid
+.contact_us-panelgrid
+.location-panelgrid
+.routing_optimization-panelgrid
+.logistic_distribution-panelgrid
+.service_maintenance-panelgrid
+.security-panelgrid
+.sales-panelgrid
+.news-panelgrid
+.help_center-panelgrid
+	height 660px
+	width 100%
+.login_back-panelgrid
+	position relative
+	background url('../img/login_back.jpg') 0% 0% / cover no-repeat
+	background-position center
+	height 100%
+	overflow hidden
+	padding 0 210px
+	min-height 800px
+.about_us-panelgrid
+	position relative
+	background url('../img/slide02.jpg') 0% 0% / cover no-repeat
+	background-position center	
+.index-panelgrid
+	position relative
+	background url('../img/slide.jpg') 0% 0% / cover no-repeat
+	background-position center
+	height 100%	
+	min-height 600px
+.attendance-panelgrid
+	position relative
+	background:url('../img/slide04.jpg') 0% 0% / cover no-repeat
+	background-position center	
+.cellular_form-panelgrid
+	position relative
+	background url('../img/slide03.jpg') 0% 0% / cover no-repeat
+	background-position center	
+.tasks-panelgrid
+	position relative
+	background url('../img/tasks.jpg') 0% 0% / cover no-repeat
+	background-position center	
+.contact_us-panelgrid
+	position relative
+	background url('../img/contact_us.jpg') 0% 0% / cover no-repeat
+	background-position center	
+.location-panelgrid
+	position relative
+	background url('../img/location.jpg') 0% 0% / cover no-repeat
+	background-position center	
+.routing_optimization-panelgrid
+	position relative
+	background: url('../img/optimization.jpg') 0% 0% / cover no-repeat
+	background-position center	
+.logistic_distribution-panelgrid
+	position relative
+	background: url('../img/logitic.jpg') 0% 0% / cover no-repeat
+	background-position center
+.service_maintenance-panelgrid
+	position relative
+	background: url('../img/service_maintenance.jpg') 0% 0% / cover no-repeat
+	background-position center
+.security-panelgrid
+	position relative
+	background: url('../img/security.jpg') 0% 0% / cover no-repeat
+	background-position center
+.sales-panelgrid
+	position relative
+	background: url('../img/sales.jpg') 0% 0% / cover no-repeat
+	background-position center
+.news-panelgrid
+	position relative
+	background: url('../img/news.jpg') 0% 0% / cover no-repeat
+	background-position center
+.help_center-panelgrid
+	position relative
+	background: url('../img/help_center.jpg') 0% 0% / cover no-repeat
+	background-position center	
+.section-inner-login
+	vertical-align: middle;
+	width auto
+	top: 40%
+	position: relative
+	transform: translateY(-58%);
+	margin 0 auto
+	.container-login
+		width 638px
+		h1
+			font-size 70px !important
+			line-height 0.89
+		.container-store
+			margin-top 50px
+.section-inner-loginform
+	text-align: center;
+	position: absolute;
+	padding-right 20px
+	margin-right 44px
+	width: 478px
+	right: 0;
+	top: 50px
+	transform translateY(-28%)
+	.form-login
+		padding 20px !important
+		background-color: #fff;
+		border: 1px solid #e6e6e6;
+		border-radius: 19px
+		margin: 0 0 10px;
+		padding: 10px 0;
+		h2
+			font-weight normal
+			text-align left
+			
+			color #284576
+		.title
+			width: 398px
+			margin: 26px auto 36px
+		a
+			color #284576
+			margin 40px 0 44px
+			display block
+		.button-blue
+			font-size 20px
+			margin-bottom 40px
+			width 276px
+			height 59px
+		.form-input
+			margin 10px
+			input
+				margin 0 auto
+				resize: none;
+				display: block;
+				outline: 0;
+				box-shadow: 0 0 6px rgba(0,0,0,0.03)
+				border-radius: 4px;
+				height 50px
+				width: 388px
+				font-size: 20px;
+				padding: 0
+				line-height: 50px
+				text-indent: 16px
+				margin-bottom: 5px;
+				border: 1px solid #efefef;
+				color: #555;
+			input::-webkit-input-placeholder
+				color #586e88
+				font-size 16px
+				opacity 0.7
+			input:-moz-placeholder
+				color #586e88
+				font-size 16px
+				opacity 0.7
+			input:-ms-input-placeholder
+				color #586e88
+				font-size 16px
+				opacity 0.7
+.info
+	opacity: 1;
+	transition: all 1s ease, opacity 0.7s ease;
+
+	overflow hidden
+	width 100%
+	padding 80px 0 100px 0
+	background url('../img/confetti.png')
+	margin 0 auto 100px
+	.section-justify
+		max-width 1100px
+		margin 0 auto
+		h5
+			color #505861
+			font-size 15px
+		p
+			line-height 30px
+			font-size 15px
+		.video
+			text-align center
+			padding 90px 0 90px
+	.section-assistance
+		max-width 1100px
+		margin 0 auto
+		.section-inner
+			line-height 30px
+			margin 0 auto
+			.form
+				h2
+					padding 5px 0
+				p
+					font-size 21px
+					text-align justify !important
+					padding 30px 0
+					line-height 30px
+				strong
+					font-family sans-serif
+				.form-content
+					width 550px
+					input
+						height 50px		
+					.form-textarea
+						font-family inherit
+						height 200px
+					.send-dates
+						.button-blue
+							margin-top 20px
+							width 140px
+			.video
+				text-align center
+				padding 90px 0 90px
+		h5
+			font-size 15px
+			line-height: 200%
+			text-align center	
+	.section-tasks
+		margin 0 auto
+		max-width 1200px
+		.section-inner
+			margin 0 auto
+			.video
+				text-align center
+				padding 150px 0 90px
+		h5
+			font-size 15px
+			line-height: 200%
+			text-align center
+			
+		.section-inner-columnleft
+			vertical-align top
+			width 473px
+			display inline-block
+			h2
+				line-height 55px
+				font-size 32px
+				font-weight normal
+			
+		.section-inner-columnright
+			padding 0 0 0 40px
+			vertical-align top
+			width 676px
+			display inline-block
+			h5
+				font-size 17px
+				text-align justify		
+	.section-information
+		max-width 1100px
+		margin 0 auto
+		.text
+			p
+				padding 0 0 70px
+				font-size 16px
+				line-height 28px
+.login_back-panelgrid
+	.header
+		padding 38px 0 20px
+.form-control
+	resize none
+	display block
+	outline 0
+	border-radius 4px
+	width 100%
+	font-size 20px
+	padding 10px 10px 12px 20px
+	margin-bottom 10px
+	box-shadow: 0 0 5px 0 rgba(23, 27, 40, 0.12);
+	border 1px solid rgba(239,239,239,0.4)
+	color #555
+
+.form-control:focus
+	outline 0
+	border-color #66afe9
+	box-shadow inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(102, 175, 233, .6)
+	color black
+.form
+	.form-content
+		input::-webkit-input-placeholder
+			color #505861
+			font-size 21px
+			opacity 0.5
+		input:-moz-placeholder
+			color #505861
+			font-size 21px
+			opacity 0.5
+		input:-ms-input-placeholder
+			color #505861
+			font-size 21px
+			opacity 0.5
+		*::-webkit-input-placeholder
+			color #505861
+			font-size 21px
+			opacity 0.5
+		*:-moz-placeholder
+			color #505861
+			font-size 21px
+			opacity 0.5
+		*::-moz-placeholder
+			color #505861
+			font-size 21px
+			opacity 0.5
+		*:-ms-input-placeholder 
+			color #505861
+			font-size 21px
+			opacity 0.5
+.section-solution
+	padding 80px 0 80px 0
+	.text
+		line-height 28px
+		text-align center
+		max-width 920px
+		margin 0 auto
+		p
+			font-size 14px
+			padding 20px 0 0 0
+	.container
+		text-align center
+		max-width 700px
+		padding 60px 0 0 0
+		margin 0 auto
+		.text
+			padding 0 0 0 58px
+			text-align justify
+			vertical-align middle
+			width 517px
+			display inline-block
+			p
+				font-size 13px
+				text-align justify
+.icons-aboutus
+	margin-right 20px
+	img
+		vertical-align middle
+.readmore
+	background url("../img/shutterstock.jpg") 0% 0%/cover no-repeat
+	background-position center
+	height 424px
+	width 100%
+	.center
+		padding 0 8px
+		max-width 900px
+		margin 0 auto
+		color white
+		position relative
+		top 50%
+		transform translateY(-50%)
+		text-align center
+		h1
+			font-weight: normal !important;
+			font-family Dharma Gothic E
+			font-size 70px
+			line-height 59px
+			//.button-blue
+			//margin-left -8%
+		.button-blue
+			width 146px
+			margin 50px
+.case_study
+	background url("../img/big_screens.png") 0% 0%/cover no-repeat
+	background-position center
+	height 660px
+	width 100%
+	.content
+		height 100%
+		margin 0 auto
+		width 1300px
+
+		.center
+			width 446px
+			position relative
+			top 50%
+			transform translate(0, -43%)
+			.button-blue
+				margin-top 30px
+				height 44px
+				width 180px
+			h1
+				font-weight normal
+				color #59719B
+				font-size 47px
+.partners
+	padding 70px 0 20px 0
+	background-color #FFFFFF
+	.content
+		max-width 900px
+		margin 0 auto
+		color #585858
+		p
+			font-size 20px
+		.section
+			padding 40px 0 20px 0
+			.container
+				margin 0 auto
+				max-width 887px
+.footer
+	background-color #232b34
+	padding 40px 0 20px 0
+	width 100%
+	p
+		font-size 13px
+		line-height 21px
+		color #e1e5ea
+	.container
+		text-align center
+		margin 0 auto
+		//max-width 1200px
+		max-width 1450px
+		padding 40px 0 40px 0
+		.telefons
+			margin 0 16px
+			text-align justify
+			padding 0 0 20px 0
+			vertical-align top
+			display inline-block
+			//width 196px
+			width 198px
+.colofon
+	max-width 1350px
+	margin 0 auto
+
+.section-tutorial
+	max-width 1000px
+	margin 0 auto
+	text-align center
+	.button-blue
+		width 125px
+		font-size 14px
+	p
+		margin 0 auto
+		font-size 13px
+		padding 20px 0 20px
+	h2
+		font-size 32px
+		padding 30px 0
+	.video
+		padding 0 0 120px
+.section-tutorial-worldusers
+	.worldmap
+		position relative
+		height 436px
+		width 826px
+		margin 0 auto
+		h4
+			font-size 25px
+			margin 0 auto
+			padding 15px 0 0
+		.worldmap-content
+			position absolute
+			top 50%
+			transform translate(45%,-50%)
+			.text
+				width 450px
+				margin 0 auto					
+.tutorial-card
+	vertical-align top
+	width 300px
+	text-align center
+	padding 0 15px 70px 15px
+	display inline-block
+	h4
+		margin 20px 0
+	p
+		width 250px
+		height 109px
+.column
+	width 547px
+	li
+		position relative
+	p
+		width 475px
+		display inline-block
+		line-height 200%
+		font-size 14px
+		padding 0 0 10px
+		color #8E8989
+.check
+	transform translateY(50%)
+	vertical-align top
+	display inline-block
+	background-image url("../img/check.png")
+	margin-right 5px
+	width 19px
+	height 16px
+	left 0
+	top 4px
+	line-height 1.3em
+.check_list
+	p
+		display inline-block
+.main-comment
+	p
+		font-size 21px !important
+		line-height 37px !important
+.section-downloads
+	overflow hidden
+	padding 30px 10px 150px 10px
+	max-width 1323px
+	margin 0 auto
+	.column-left
+	.column-right
+		display inline-block
+		vertical-align top
+
+	.column-left span:last-child
+	.column-right span:last-child
+		border none
+	.column-left
+		float left
+	.column-right
+		float right
+	.column
+		border-radius: 6px;
+		box-shadow: 0 0 5px 0 rgba(23, 27, 40, 0.12);
+		border 1px solid rgba(239,239,239,0.4)
+		padding: 20px;
+		display: inline-block;
+		align-items: stretch;
+		background: #fff;
+		color: #585858;
+		width: 630.6px
+		height 385.7px
+		span
+			display block
+			border-bottom: 1px solid #e7e7e7;
+			padding: 20px 20px;
+			text-align: initial;
+			width: 100%;
+			cursor: pointer;
+			a
+				color #505861
+	h3
+		font-family Dharma Gothic E
+		font-size 50px
+.section-news
+	max-width 1450px
+	margin 0 auto
+	.section-news-card
+		text-align center
+		.news-card
+			width 408px
+			vertical-align top
+			margin 15px
+			box-shadow: 0px 1px 5px -1px rgba(107,107,107,0.5)
+			background-color white
+			border-radius 13px
+			display inline-block
+			padding 0 22px
+			text-align center
+			border 1px solid rgba(239, 239, 239, 0.4)
+			height 489px
+			img
+				margin-top 25px
+			.text
+				width 365px
+				margin 0 auto
+				text-align justify
+				.title
+					padding 12px 0 9px 0
+					color #5A5858
+					p
+						font-size 20px
+						font-weight 600
+						line-height 25px !important
+				.time-text
+					margin-top 5px
+					color #5A5858
+					opacity .8					
+.tabs
+	padding 90px 0
+	position relative
+	margin 0 auto
+	text-align center
+	.menu-container
+		cursor pointer
+
+.tabs nav
+	border-radius 6px
+	box-shadow: 0 0 5px 0 rgba(23, 27, 40, 0.12);
+	border 1px solid rgba(239,239,239,0.4)
+	padding 20px
+	display inline-block
+	align-items stretch
+	background white
+	color #585858
+	width 390px
+.tabs nav li
+	border-bottom 1px solid #E7E7E7
+	padding 20px 20px
+	text-align initial
+	width 100%
+	cursor pointer	
+.tabs nav li:last-child
+	border-bottom none
+.tabs nav li:hover,
+.tabs nav li.selected
+	color #3c75d8
+	font-weight 600
+.tabs .container
+	text-align initial
+	vertical-align top
+	display inline-block
+	min-width auto
+.tabs .content	
+	max-width 920px
+	display none
+	margin 0 40px
+	background-color white
+	border-radius 6px
+	box-shadow: 0 0 5px 0 rgba(23, 27, 40, 0.12);
+	border 1px solid rgba(239,239,239,0.4)
+	padding 20px 0px
+	top 0px
+	left 390px
+	color #414641
+	overflow hidden
+	opacity 0
+	transition opacity 0.1s linear 0s
+.tabs .content.visible
+	min-width 920px
+	display block
+	padding 18px 60px 50px 60px
+	opacity 1
+	h4
+		margin-top 20px
+		font-size 16px
+.tabs .content p
+	padding-bottom 2px;
+	line-height 28px
+	font-size 15px
+.tabs .content strong
+	color #6DA0F9
+.tabs .content p:last-of-type
+	padding-bottom 0px; 
+.video
+	text-align center	
+.menujq a 
+	display none
+.mini-blue
+	width 30px
+	border 1px solid #5892f8
+.title_mini-blue
+	margin-bottom 30px
+	h3
+		margin-bottom 10px
+.menu-container
+	display none
+	margin 65px 0
+	cursor pointer
+	outline 0px
+	background #5892F8
+	width 102px
+	border-radius 4px
+	padding 9px 12px
+	border-color #5892F8
+	border 2px solid #5892F8
+	font-weight 600
+	color white
+.login_back-panelgrid 
+.about_us-panelgrid
+.attendance-panelgrid
+.cellular_form-panelgrid
+.tasks-panelgrid
+.contact_us-panelgrid
+.location-panelgrid
+.routing_optimization-panelgrid
+.logistic_distribution-panelgrid
+.service_maintenance-panelgrid
+.security-panelgrid
+.sales-panelgrid
+.news-panelgrid
+.help_center-panelgrid
+	.splash
+		font-size 90px 
+.comment-gray
+	color #585858
+.comment-center
+	text-align center
+.left
+	float left
+.right
+	float right
+.video
+	iframe
+		z-index 2
+		position relative
+	img
+		z-index 1
+		position relative
+		top -34px
+.info-backgroundcolor
+	background-color #fafafa
+@media only screen and (max-width 1600px)
+	.section-inner-login .container-login
+		width 482px
+	.login_back-panelgrid
+		padding 0 116px
+	.section-inner-loginform
+		transform translateY(-13%)
+@media only screen and (max-width 1500px)
+	.tabs .content.visible
+		min-width auto
+	.tabs .content
+		max-width 718px
+	.video
+		iframe
+			z-index 2
+			position relative
+			width 900px
+			height 510px
+		img
+			z-index 1
+			position relative
+			top -34px
+			width 868px
+	.cta-container
+		width 1200px
+@media only screen and (max-width 1400px)
+	.section-downloads
+		padding 30px 10px 100px 10px !important
+		text-align center 
+	.column-left
+	.column-right
+		display block !important
+		float none !important
+@media only screen and (max-width 1280px)
+	.index-panelgrid .splash p
+		width auto
+	.section-inner-loginform
+		transform translateY(-28%)
+	.container-login
+		display none
+	.section-inner-login
+		transform translateY(-31%)
+	.section-inner-loginform
+		margin 0 auto
+		position relative
+	.login_back-panelgrid
+		.header
+			.logo-container
+				margin-left 0
+				width 100%
+				margin 0 auto
+				text-align center
+				.logo
+					width auto
+					
+@media only screen and (max-width 1200px)
+	
+
+	.splash
+		font-size 76px !important
+	.login_back-panelgrid
+		padding 0 20px
+	.cta-container
+		width 1050px
+	.menu-container
+		display inline-block
+	.menujq ul
+		position relative
+		aria-expanded false
+		list-style none
+		z-index 95
+		width 100%
+		margin 0 auto
+		padding 0
+		font-size 13px
+	.menujq
+		display none
+	.menujq a 
+		display block
+		padding 10px
+		background rgba(rgba(13,13,13,0.8))
+		color #fff
+		text-decoration none
+		font-size 16px
+		line-height 16px	
+	.menujq ul li a:before 
+		content "\25CF\00A0 "
+		width 28px
+		display inline-block
+		vertical-align top	
+	.menujq ul li.drop-down > a:before,
+	.menujq ul li ul li.drop-down > a:before 
+		content "\25BA\00A0"	
+	.menujq ul li.drop-down.active > a:before,
+	.menujq ul li ul li.drop-down.active > a:before
+		content "\25BC\00A0 "	
+	.menujq ul ul, .menujq ul ul ul 
+		display none
+		width 100%	
+	.menujq ul ul a 
+		padding-left 20px
+		background  rgba(45,45,45,0.9)
+		text-transform capitalize	
+	.menujq ul ul ul a 
+		padding-left 40px
+		background #ED9C54
+		text-transform capitalize	
+	.index-panelgrid
+		.splash
+			font-size 47px !important
+			p
+				font-size 18px
+	.sign-in
+		cursor pointer
+		right 0
+		top 12px
+		font-size 5px
+		margin 0 10px 0 0
+		position absolute
+		min-width 30px
+		height 4px
+		background-color #fff
+		border-radius 100px
+		.hamburger
+			width 40px
+			height 40px
+			position absolute
+			margin -18px 5px 0 -5px
+		.button-transparent 
+			display none
+		.button-blue
+			display none
+	.sign-in::before
+		content ''
+		width 100%
+		bottom 200%
+		display block
+		position absolute
+		height 4px
+		background-color #fff
+		border-radius 100px
+	.sign-in::after
+		content ''
+		width 100%
+		top 200%
+		display block
+		position absolute
+		height 4px
+		background-color #fff
+		border-radius 100px
+	.section-inner
+	.section-solution
+		padding 20px 10px	
+	.section-inner-columnleft
+	.section-inner-columnright
+		display inherit !important
+		margin 0 auto
+		width inherit !important
+	.column	
+		text-align justify
+		float none
+		margin 0 auto
+	.case_study
+		.content
+			width inherit
+			.center
+				text-align center
+				width inherit
+	.appbar-nav
+		display none
+	.tabs
+		.container
+			display block
+			min-width 100%
+			padding 0 30px
+		.content
+			padding 20px 20px 50px !important
+			min-width 100% !important
+			max-width 100%
+			margin 0
+		.menu-container-inner
+			display none !important
+		.menu-container-inner.visible
+			display inline-block !important
+		.container.no-visible
+			display none !important					
+@media only screen and (max-width 979px)
+	.login_back-panelgrid
+	.about_us-panelgrid
+	.index-panelgrid
+	.attendance-panelgrid
+	.cellular_form-panelgrid
+	.tasks-panelgrid
+	.contact_us-panelgrid
+	.location-panelgrid
+	.routing_optimization-panelgrid
+	.logistic_distribution-panelgrid
+	.service_maintenance-panelgrid
+	.security-panelgrid
+	.sales-panelgrid
+	.news-panelgrid
+	.help_center-panelgrid
+		height 100%
+	.section-news .section-news-card .news-card .text
+		width 365px !important
+	.info .section-solution h2
+		font-size 23px
+	.text
+		width 490px !important
+		margin 0 auto
+	.info
+		text-align center
+		padding 20px 0
+	.video
+		text-align center
+		iframe
+			width 510px
+			height 293px
+		img
+			top -16px
+			width 478px
+	.column
+		padding 0 18px
+		
+	.cta-container
+		width inherit
+	.container-store
+		margin 0 auto
+		transform translateY(37%)
+	.worldmap
+		width 400px !important
+		.wallpaper
+			img
+				height 200px
+	.worldmap-content
+		transform translate(0%, -50%) !important
+		.text
+			width inherit !important
+	.section-justify
+		text-align justify !important
+	.info .section-tasks .section-inner-columnright
+		padding 0
+		h5
+			font-size 14px
+	.info .section-tasks .section-inner-columnleft h2
+		line-height 40px
+		font-size 25px
+		margin-bottom 40px
+	.section-solution .container .text
+		padding 0
+	.readmore
+		.center
+			h1
+				font-size 48px
+	.tabs
+		.container
+			padding 0 10px
+@media only screen and (max-width 732px)
+	.check
+		display none !important
+	.section-solution
+		.text
+			h4
+				text-align center
+	.section-downloads .column
+		width auto
+		height auto
+	
+	.cta-container
+		h1
+			font-size 55px
+	.container-store
+		position relative
+		width 260px
+	.check_list
+		.check
+			display none			
+	.login_back-panelgrid h1 
+	.about_us-panelgrid h1
+	.attendance-panelgrid h1
+	.cellular_form-panelgrid h1
+	.tasks-panelgrid h1
+	.contact_us-panelgrid h1
+	.location-panelgrid h1
+	.routing_optimization-panelgrid h1
+	.logistic_distribution-panelgrid h1
+	.service_maintenance-panelgrid h1
+	.security-panelgrid h1
+	.sales-panelgrid h1
+	.news-panelgrid h1
+	.help_center-panelgrid h1
+		font-size 90px !important		
+@media only screen and (max-width 570px)
+	.index-panelgrid
+		.splash
+			h1
+				font-size 47px !important
+	.cta-container-bottom .bottom-right .social
+		display none
+	.login_back-panelgrid
+		.header
+			.logo-container
+				margin-left 0
+				min-width 0
+				margin 0 auto
+				.logo
+					width auto
+		.section-inner-loginform
+			width 100%
+			padding 0
+			max-width 371px
+			.form-login 
+				a
+					margin 30px 0
+				.form-input 
+					input
+						width 100%
+						font-size 13px
+						height 50px
+				.button-blue
+					width 159px
+					height 42px
+					margin-bottom 25px
+					font-size 16px
+				.title
+					width 100%
+					margin 23px 20px 30px 8px
+					h2
+						font-size 24px
+	.video
+		text-align center
+		iframe
+			width 288px
+			height 168px
+		img
+			top -10px
+			width 256px
+	.social
+	.text
+		width inherit !important
+		margin 0 auto
+	.cta-container
+		h1
+			font-size 60px
+	.splash
+		p
+			font-size 14px
+	.column
+		width auto
+		p
+			width inherit
+	.change-language
+		padding 0 0 0 20px !important
+	
+	.worldmap
+		width inherit !important
+		margin 0 20px !important
+	.logo
+		img
+			width 127px
+	.readmore
+		.center
+			h1
+				font-size 40px
+	h3
+		font-size 20px
+	.main-comment
+		p
+			font-size 17px !important
+			line-height 28px !important
+	.section-news
+		.section-news-card
+			width 90%
+			.news-card
+				padding 0 22px 40px
+				height 100% !important
+				width 100% !important
+				img
+					width 100%
+					height 100%
+				.text
+					width 100% !important
+					text-align left
+		.section-inner
+			padding 0
+	.case_study .content .center h1
+		font-size 33px
+	.tabs nav
+		width auto
+		margin 0 10px
+	.info .section-assistance .section-inner .form .form-content
+		width 100%
+	.footer .container .telefons
+		text-align center
+	.icons-aboutus
+		margin 0
+		img
+			margin-bottom 25px
+	.partners
+		.content 
+			p
+				margin-bottom 30px
+		.container
+			img
+				display block
+				margin 0 auto
+		
